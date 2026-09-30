@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(date:*)",
+      "Bash(mkdir -p cua-toi/:*)",
+      "Bash(git -C cua-toi status:*)",
+      "Bash(git -C cua-toi add:*)",
+      "Bash(git -C cua-toi commit:*)",
+      "Bash(git -C cua-toi log:*)",
+      "Bash(git -C cua-toi diff:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)",
+      "Bash(git push:*)",
+      "Bash(git -C cua-toi push:*)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  }
+}

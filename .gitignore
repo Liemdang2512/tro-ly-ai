@@ -1,0 +1,5 @@
+# Dữ liệu riêng của người dùng — không bao giờ đưa lên repo chung
+/cua-toi/
+.claude/settings.local.json
+.DS_Store
+.harness/
