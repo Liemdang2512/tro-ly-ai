@@ -14,7 +14,8 @@ Lần đầu mở, trợ lý sẽ **hỏi anh/chị khoảng 10 phút** về cô
 
 ## Cài đặt (1 lần, khoảng 15 phút)
 
-1. **Tải thư mục này về** và để ở chỗ dễ tìm, ví dụ trong *Tài liệu* (Documents). Đừng đổi tên hay xóa file bên trong.
+1. **Tải về:** bấm link **[tải Trợ Lý AI (file .zip)](https://github.com/Liemdang2512/tro-ly-ai/archive/refs/heads/main.zip)** → mở file vừa tải để giải nén → kéo thư mục `tro-ly-ai-main` vào *Tài liệu* (Documents). Đừng xóa file bên trong.
+   *Người rành máy tính có thể dùng* `git clone https://github.com/Liemdang2512/tro-ly-ai.git` *— cách này cập nhật tự động được.*
 2. **Bấm đúp file `CAI-DAT.command`.**
    - Nếu Mac báo *"không thể mở vì không xác minh được nhà phát triển"*: bấm chuột phải (hoặc Control + bấm) vào file → chọn **Mở** → **Mở**.
    - Vẫn không được: mở ứng dụng **Terminal**, gõ `bash ` (có dấu cách), kéo file `CAI-DAT.command` vào cửa sổ Terminal, nhấn Enter.
