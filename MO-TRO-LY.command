@@ -5,4 +5,5 @@ export PATH="$HOME/.local/bin:$PATH"
 if ! command -v claude >/dev/null 2>&1 || [ ! -f cua-toi/AGENTS.md ]; then
   exec bash ./CAI-DAT.command
 fi
+bash scripts/nang-cap.sh >/dev/null 2>&1
 exec claude "tiếp tục"

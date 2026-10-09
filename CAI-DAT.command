@@ -22,21 +22,23 @@ else
   echo "✅ Đã cài Claude Code."
 fi
 
-# 2. Claude Code đọc kỹ năng ở .claude/skills — trỏ về .agents/skills (chuẩn dùng chung cho mọi AI)
-mkdir -p .claude
-if [ ! -L .claude/skills ] && [ ! -d .claude/skills ]; then
-  rm -f .claude/skills
-  ln -s ../.agents/skills .claude/skills
+# 2. Cảnh báo nếu thư mục đang nằm trong vùng đồng bộ đám mây (iCloud/OneDrive/Dropbox/Google Drive).
+#    Đồng bộ dễ làm hỏng lịch sử của sổ và sinh file trùng kiểu "ho-so 2.md".
+dong_bo=""
+case "$PWD" in
+  *"Mobile Documents"*|*CloudStorage*|*OneDrive*|*Dropbox*|*"Google Drive"*) dong_bo=1 ;;
+  "$HOME/Documents"*|"$HOME/Desktop"*)
+    [ -d "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Documents" ] && dong_bo=1 ;;
+esac
+if [ -n "$dong_bo" ]; then
+  bold "⚠️  Thư mục này có vẻ đang được iCloud/OneDrive/Dropbox đồng bộ."
+  echo "Nên chuyển thư mục Trợ Lý AI ra chỗ không đồng bộ, ví dụ: $HOME/tro-ly-ai"
+  printf "Vẫn tiếp tục cài ở đây? (c = có, Enter = dừng lại): "; read -r tl
+  [ "$tl" = "c" ] || fail "Đã dừng. Chuyển thư mục rồi bấm đúp lại file cài đặt."
 fi
 
-# 3. Thư mục riêng của người dùng + lưu lịch sử thay đổi (để khôi phục khi cần)
-mkdir -p cua-toi
-if xcode-select -p >/dev/null 2>&1 && [ ! -d cua-toi/.git ]; then
-  git -C cua-toi init -q
-  git -C cua-toi config user.name "Tro Ly AI"
-  git -C cua-toi config user.email "tro-ly-ai@localhost"
-  echo "✅ Đã bật lưu lịch sử cho dữ liệu cá nhân."
-fi
+# 3. Liên kết kỹ năng, lưu lịch sử cho cua-toi/, cấu trúc thư mục.
+bash scripts/nang-cap.sh
 
 chmod +x MO-TRO-LY.command CAP-NHAT.command 2>/dev/null
 
