@@ -6,13 +6,26 @@ Lần đầu mở, trợ lý sẽ **hỏi anh/chị khoảng 10 phút** về cô
 
 ---
 
+## Cài đặt nhanh: 3 bước, khoảng 15 phút
+
+| Bước | Anh/chị làm | Ghi chú |
+|---|---|---|
+| **1. Chuẩn bị** | Có sẵn một tài khoản **Claude trả phí** (Pro hoặc Max), đăng ký tại [claude.ai](https://claude.ai) | Chưa có tài khoản thì đăng ký trước, rồi mới cài. Máy cần có Internet |
+| **2. Cài** | **Mac:** mở **Terminal**, dán 1 dòng lệnh (xem mục *Cài đặt trên Mac*). **Windows:** tải file ZIP, bấm đúp `CAI-DAT.bat` (xem mục *Cài đặt trên Windows*) | Bộ cài tự lo phần còn lại. Cửa sổ hiện chữ chạy liên tục là bình thường, đừng đóng |
+| **3. Trả lời** | Đăng nhập Claude khi trình duyệt mở ra, rồi **trả lời các câu trợ lý hỏi** (khoảng 10 phút) | Câu nào chưa muốn trả lời thì gõ "bỏ qua". Hỏi tin tưởng thư mục thì chọn **Yes** |
+
+Làm xong là dùng được ngay. Kẹt ở bước nào thì xem mục *Gặp sự cố* ở cuối, hoặc chụp màn hình gửi người đã đưa anh/chị bộ này.
+
 ## Cần chuẩn bị
 
 - Máy **Mac** hoặc **Windows 10/11**, có Internet.
 - Tài khoản **Claude** trả phí (Pro hoặc Max). Đăng ký tại claude.ai.
 - *(Không bắt buộc)* Tài khoản **ChatGPT** nếu muốn dùng thêm Codex.
+- Quyền cài phần mềm trên máy (máy công ty có thể bị chặn, hỏi bộ phận IT).
 
 > **Đừng cài vào thư mục đang đồng bộ đám mây** (iCloud Drive, OneDrive, Dropbox, Google Drive). Đồng bộ dễ làm hỏng sổ nhớ và sinh file trùng. Bộ cài sẽ cảnh báo nếu phát hiện.
+
+> **Về dữ liệu:** bộ này tải từ GitHub nhưng **dữ liệu của anh/chị không bao giờ được gửi lên GitHub**. Mọi thứ anh/chị nói với trợ lý, hồ sơ, dự án đều nằm trong thư mục `cua-toi` trên máy của anh/chị.
 
 ## Cài đặt trên Mac (1 lần, khoảng 15 phút)
 
@@ -116,6 +129,11 @@ Bấm đúp **`CAP-NHAT.command`** (Mac) hoặc **`CAP-NHAT.bat`** (Windows). D�
 | Hiện tượng | Cách xử lý |
 |---|---|
 | Bấm đúp không mở được | Xem bước 2 phần Cài đặt |
+| Mac hiện hộp thoại "Command Line Tools" rồi dòng lệnh dừng | Bấm **Cài đặt**, chờ xong, **dán lại đúng dòng lệnh** một lần nữa |
+| Báo `claude: command not found` | Đóng cửa sổ Terminal, mở lại, rồi bấm đúp `MO-TRO-LY.command` (hoặc `MO-TRO-LY.bat` trên Windows) |
+| Trình duyệt không mở để đăng nhập | Trong cửa sổ trợ lý, làm theo đường link hiện ra, dán vào trình duyệt thủ công |
+| Đăng nhập xong báo không có quyền dùng Claude Code | Tài khoản phải là **Pro hoặc Max**. Gói miễn phí không dùng được |
+| Cài ở máy công ty bị chặn | Hỏi bộ phận IT cho phép cài Claude Code và Git, hoặc dùng máy cá nhân |
 | Trợ lý không nhớ gì | Nói "đọc lại hồ sơ của tôi". Vẫn không được → kiểm tra thư mục `cua-toi` còn đó không |
 | Trợ lý hỏi xin phép liên tục | Chọn "Yes, and don't ask again" cho thao tác an toàn, hoặc nhờ người quản trị |
 | Codex không nhắc phiên cũ, không tự lưu khi đóng | Chưa tin tưởng hook. Gõ `/hooks` trong Codex → trust |

@@ -61,6 +61,18 @@ Luật nào trợ lý hay vi phạm → cân nhắc chuyển thành hook/permiss
 
 `goi/` chỉ còn cho người dùng v0.1; bỏ ở bản sau khi không còn ai trỏ tới.
 
+## Gửi cho người dùng mới
+
+Repo công khai: `https://github.com/Liemdang2512/tro-ly-ai`. Người nhận **không cần tài khoản GitHub**. Dữ liệu cá nhân không lên mạng (`cua-toi/` nằm trong `.gitignore`).
+
+Tin nhắn mẫu (Mac):
+> Em gửi anh/chị bộ Trợ Lý AI. Anh/chị cần có sẵn tài khoản Claude Pro (claude.ai). Rồi mở link này, làm theo mục "Cài đặt nhanh" và "Cài đặt trên Mac": https://github.com/Liemdang2512/tro-ly-ai
+> Cài xong trợ lý sẽ hỏi khoảng 10 phút để làm quen với anh/chị. Kẹt chỗ nào anh/chị chụp màn hình gửi em.
+
+Windows: thay "Cài đặt trên Mac" bằng "Cài đặt trên Windows" và dặn rõ là bản thử nghiệm.
+
+Trước khi gửi: `git status -sb` phải không còn "ahead" (đã push), và đã thử cài trên một thư mục sạch.
+
 ## Phát hành bản mới
 
 1. Sửa lõi / gói / skill. Không sửa `mau/` theo cách làm hỏng thư mục `cua-toi/` đã tạo (người dùng cũ không được tạo lại).
