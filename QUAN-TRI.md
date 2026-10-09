@@ -83,3 +83,7 @@ Mỗi tuần (hoặc khi người dùng nói "dọn dẹp"): bài học lặp l�
 - Điều khiển qua **Telegram**: Claude Code Channels (research preview) — plugin `telegram@claude-plugins-official`, cần Bun và phiên Claude Code chạy liên tục. Xem docs "channels" của Claude Code.
 - Bản tin tự động mỗi sáng: scheduled tasks của Claude Code / Desktop.
 - Kho nhớ dùng chung cho app chat (không phải agent): đồng bộ `cua-toi/` lên Google Drive/Notion.
+
+## Agent phòng ban MOCHA (`mocha/`)
+
+Phần huấn luyện agent phòng ban nằm ở `mocha/` — xem `mocha/README.md`. Sửa ở `mocha/`, không sửa bản chép trong `cua-toi/MOCHA_AI/00_CHUNG/`. Máy dùng bấm `CAP-NHAT.command` là tự nhận bản mới. Lần đầu sau khi có tính năng này: bấm `CAP-NHAT.command` **2 lần** (lần 1 kéo bản mới của chính file cập nhật, lần 2 mới chạy phần MOCHA).

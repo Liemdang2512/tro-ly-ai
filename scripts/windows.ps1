@@ -120,6 +120,7 @@ switch ($Viec) {
       Write-Host '❌ Chưa cập nhật được (có thể do mất mạng hoặc file lõi bị sửa tay). Hãy nhờ người quản trị.' -ForegroundColor Red
     } else {
       NangCap
+      if (Test-Path 'mocha\cap-nhat-mocha.sh') { & $bash mocha/cap-nhat-mocha.sh }
       Write-Host '✅ Đã cập nhật. Dữ liệu cá nhân (cua-toi) giữ nguyên.' -ForegroundColor Green
     }
     Read-Host 'Nhấn Enter để đóng cửa sổ'

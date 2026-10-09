@@ -6,6 +6,7 @@ done_msg() { printf '\n%s\n\nNhấn Enter để đóng cửa sổ.' "$1"; read -
 if [ -d .git ] && xcode-select -p >/dev/null 2>&1; then
   if git pull --ff-only; then
     bash scripts/nang-cap.sh
+    [ -f mocha/cap-nhat-mocha.sh ] && bash mocha/cap-nhat-mocha.sh
     done_msg "✅ Đã cập nhật. Dữ liệu cá nhân (cua-toi) giữ nguyên."
   else
     done_msg "❌ Chưa cập nhật được (có thể do mất mạng hoặc file lõi bị sửa tay). Hãy nhờ người quản trị."

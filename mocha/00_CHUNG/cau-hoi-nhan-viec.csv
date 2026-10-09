@@ -1,0 +1,49 @@
+ma,phan,phong,cau_hoi,goi_y,ghi_vao
+0.1,0. Xưng hô,,Em nên gọi mình là gì ạ (anh/chị + tên)?,Ví dụ: chị Quyên,ho-so-phong.md (đầu file)
+A1,A. Vai trò,,{Goi} muốn em đóng vai trò gì trong phòng {phong} ạ?,Trợ lý của trưởng phòng · chuyên viên phân tích số liệu · người soạn báo cáo · người theo dõi tiến độ,ho-so-phong.md › Vai trò của em
+A2,A. Vai trò,,Nhiệm vụ chính của em là gì ạ? {Goi} kể giúp em 3 việc muốn giao em nhất.,1) … 2) … 3) …,ho-so-phong.md › Vai trò của em
+A3a,A. Vai trò,,Việc thứ 1 ở câu A2: em lấy dữ liệu ở đâu · làm xong gửi cho ai · cần lúc nào ạ?,Dữ liệu từ file Sheets … · gửi trưởng phòng · 9h sáng hằng ngày,ho-so-phong.md › Vai trò của em
+A3b,A. Vai trò,,Việc thứ 2 ở câu A2: em lấy dữ liệu ở đâu · làm xong gửi cho ai · cần lúc nào ạ?,,ho-so-phong.md › Vai trò của em
+A3c,A. Vai trò,,Việc thứ 3 ở câu A2: em lấy dữ liệu ở đâu · làm xong gửi cho ai · cần lúc nào ạ?,,ho-so-phong.md › Vai trò của em
+A4,A. Vai trò,,Em báo cáo trực tiếp cho ai ạ? Ngoài {goi} còn ai được giao việc cho em không?,,ho-so-phong.md mục 2
+A5,A. Vai trò,,Việc nào em được TỰ LÀM LUÔN · việc nào PHẢI HỎI {GOI} TRƯỚC · việc nào em TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM ạ?,Không được làm: tự gửi khách · tự duyệt chi · sửa số liệu gốc,ho-so-phong.md › Vai trò của em + mục 4
+A6,A. Vai trò,,{Goi} muốn em trả lời thế nào ạ: ngắn gọn hay chi tiết · có cần kẻ bảng không?,Ngắn gọn · kết luận trước · có bảng khi có số,ho-so-phong.md › Vai trò của em
+B7,B. Làm đúng,,Một kết quả thế nào thì {goi} coi là ĐẠT ạ?,Đúng số · đúng kỳ · đủ các nhãn · có đề xuất hành động,ho-so-phong.md › Checklist trước khi giao
+B8,B. Làm đúng,,Trước đây người làm việc này hay sai ở đâu ạ để em tránh?,,ho-so-phong.md › Checklist trước khi giao
+B9,B. Làm đúng,,Chi tiết nào em phải soát hai lần ạ?,Số tiền · mã · ngày · tên khách,ho-so-phong.md › Checklist trước khi giao
+C10,C. Hiểu phòng,,Phòng mình làm theo quy trình nào ạ? {Goi} kể từng bước: ai làm · nhận gì · giao gì · hay bị tắc ở đâu.,Bước 1: … → Bước 2: …,sop/ + ho-so-phong.md mục 6
+C11,C. Hiểu phòng,,Phòng mình phân loại khách / sản phẩm / đơn / yêu cầu thế nào ạ?,,ho-so-phong.md mục 3 hoặc du-lieu/
+C12,C. Hiểu phòng,,Phòng dùng những bộ mã nào · ai giữ mã ạ?,SKU · mã khách · mã chiến dịch · mã chứng từ,ho-so-phong.md mục 3
+C13,C. Hiểu phòng,,Có quy định nào em bắt buộc phải theo không ạ (nội bộ hoặc pháp luật)?,,ho-so-phong.md mục 6
+C14,C. Hiểu phòng,,Có từ viết tắt · tên gọi nội bộ · tên người nào em cần biết không ạ?,,ho-so-phong.md mục 3
+C15,C. Hiểu phòng,,Phòng mình nhận việc từ phòng nào và giao kết quả cho phòng nào ạ?,,ho-so-phong.md mục 6
+D16,D. Đầu ra,,{Goi} gửi em 2–3 mẫu kết quả thấy tốt nhất được không ạ? (Excel không đính kèm được file: gửi lại phiếu xong thì gửi tiếp luôn các file mẫu · em tự lưu),Ghi tên các file sẽ gửi,du-lieu/10_mau-dau-ra-tot/ + mục 9
+D17,D. Đầu ra,,Kết quả {goi} muốn nhận dạng gì (tin nhắn · Sheets · Word · PDF) · bao lâu một lần · ai đọc để quyết việc gì ạ?,,ho-so-phong.md mục 9
+E18,E. Công cụ,,Dữ liệu của phòng đang nằm ở đâu ạ?,Drive · Google Sheets · Gmail · Zalo · Pancake · MISA · phần mềm khác,ho-so-phong.md mục 7 › Nhu cầu kết nối
+E19,E. Công cụ,,Với từng chỗ ở câu E18: em chỉ cần XEM hay cần SỬA/GHI vào ạ?,,ho-so-phong.md mục 7 › Nhu cầu kết nối
+E20,E. Công cụ,,Có dữ liệu nào {goi} không muốn em đụng vào không ạ?,Bảng lương · sao kê · hồ sơ cá nhân,ho-so-phong.md mục 7 + mục 4
+F21,F. Tự chạy,,Có việc nào lặp lại đều đặn (mỗi sáng · mỗi thứ Hai · cuối tháng…) mà {goi} muốn em tự làm không cần nhắc không ạ?,,ho-so-phong.md mục 6 › Việc có thể tự chạy theo lịch
+F22,F. Tự chạy,,Việc nào quan trọng · {goi} muốn có thêm một bước kiểm tra lại trước khi gửi ạ?,,ho-so-phong.md mục 6 › Việc cần kiểm tra lại
+SH1,R. Riêng phòng,Dự án số hoá|Số hoá,Phòng mình đang chạy những dự án số hoá nào · mỗi dự án ở bước nào · ai phụ trách ạ?,,du-an/
+SH2,R. Riêng phòng,Dự án số hoá|Số hoá,Khi có nhiều dự án · {goi} ưu tiên theo tiêu chí gì · ai chốt ạ?,,ho-so-phong.md mục 4
+MA1,R. Riêng phòng,Người giữ mã|Giữ mã,Em đang giữ những bộ mã nào (SKU · khách hàng · nhà cung cấp · khoản mục…) · file gốc ở đâu ạ?,,ho-so-phong.md mục 3 + mục 7
+MA2,R. Riêng phòng,Người giữ mã|Giữ mã,Quy tắc đặt mã từng bộ thế nào · ai được xin mã mới · cấp mã theo bước nào ạ?,,sop/ + mục 3
+MA3,R. Riêng phòng,Người giữ mã|Giữ mã,Lỗi mã hay gặp là gì ạ (trùng · sai cấu trúc · mã chết)?,,ho-so-phong.md › Checklist trước khi giao
+TC1,R. Riêng phòng,Tài chính,Phòng mình có những báo cáo định kỳ nào (dòng tiền · P&L · công nợ…) · chốt số ngày nào ạ?,,ho-so-phong.md mục 9
+TC2,R. Riêng phòng,Tài chính,Ngưỡng duyệt chi theo từng cấp là bao nhiêu ạ?,,ho-so-phong.md mục 4
+CEO1,R. Riêng phòng,CEO,Mỗi tuần {goi} cần xem 5 chỉ số nào · lấy từ phòng nào ạ?,,ho-so-phong.md mục 8
+CEO2,R. Riêng phòng,CEO,Những quyết định {goi} hay phải ra là gì · em cần chuẩn bị trước những gì ạ?,,ho-so-phong.md › Vai trò của em
+CEO3,R. Riêng phòng,CEO,{Goi} thích nhận tóm tắt dạng nào ạ: vài dòng · bảng · hay có sẵn đề xuất?,,ho-so-phong.md mục 9
+ADS1,R. Riêng phòng,Ads,Phòng mình chạy quảng cáo trên nền tảng nào (Meta · TikTok · Google · Shopee…) · số liệu em lấy ở đâu ạ?,,ho-so-phong.md mục 7
+ADS2,R. Riêng phòng,Ads,Ngưỡng cảnh báo là bao nhiêu ạ: chi phí mỗi đơn (CPA) · tỉ lệ doanh thu trên chi phí quảng cáo (ROAS) · ngân sách/ngày?,,ho-so-phong.md mục 8
+ADS3,R. Riêng phòng,Ads,Ai được bật · tắt · tăng ngân sách chiến dịch ạ? Em chỉ đề xuất thôi đúng không ạ?,,ho-so-phong.md mục 4
+MKT1,R. Riêng phòng,Marketing|Mkt|Media,Mình đăng trên những kênh nào · lịch đăng ra sao · ai duyệt bài ạ?,,ho-so-phong.md mục 6 + mục 9
+MKT2,R. Riêng phòng,Marketing|Mkt|Media,Giọng thương hiệu thế nào · từ nào cấm · câu quảng cáo mỹ phẩm nào không được dùng (công dụng điều trị · cam kết hiệu quả…) · ai kiểm tra pháp lý nội dung ạ?,,ho-so-phong.md › Checklist trước khi giao + mục 6
+SP1,R. Riêng phòng,Phát triển sản phẩm|PTSP|R&D|RND,Một sản phẩm đi từ ý tưởng → công thức → mẫu → công bố → ra mắt thế nào · mỗi bước ai làm ạ?,,sop/ + mục 6
+SP2,R. Riêng phòng,Phát triển sản phẩm|PTSP|R&D|RND,Hồ sơ một sản phẩm gồm những gì · ai lo hồ sơ công bố mỹ phẩm ạ?,,ho-so-phong.md mục 9
+SP3,R. Riêng phòng,Phát triển sản phẩm|PTSP|R&D|RND,{Goi} chọn hay loại ý tưởng sản phẩm theo tiêu chí gì ạ?,,ho-so-phong.md › Vai trò của em
+GC1,R. Riêng phòng,Gia công|B2B,Mình chia khách gia công thành những nhóm nào ạ (mới/cũ · quy mô · mức nghiêm túc)?,,ho-so-phong.md mục 3
+GC2,R. Riêng phòng,Gia công|B2B,Quy trình báo giá → làm mẫu → chốt đơn → sản xuất → giao hàng thế nào · số lượng tối thiểu (MOQ) bao nhiêu · cần thông tin gì trước khi báo giá ạ?,,sop/ + mục 6
+GC3,R. Riêng phòng,Gia công|B2B,Khách thường liên hệ qua kênh nào ạ (Zalo · Pancake · email…)?,,ho-so-phong.md mục 7
+NS1,R. Riêng phòng,Nhân sự|HR,Quy trình tuyển dụng và nhận việc cho người mới thế nào · mẫu mô tả công việc (JD) đang dùng ở đâu ạ?,,sop/ + mục 9
+NS2,R. Riêng phòng,Nhân sự|HR,Những chính sách nào em cần nắm để trả lời nhân viên ạ?,,ho-so-phong.md mục 6
