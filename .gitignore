@@ -1,5 +1,7 @@
 # Dữ liệu riêng của người dùng — không bao giờ đưa lên repo chung
 /cua-toi/
+# Bộ cài tự tạo (liên kết trên Mac, junction trên Windows) trỏ về .agents/skills
+/.claude/skills
 .claude/settings.local.json
 .DS_Store
 .harness/

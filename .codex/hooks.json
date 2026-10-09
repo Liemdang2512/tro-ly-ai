@@ -1,0 +1,14 @@
+{
+  "description": "Trợ Lý AI: theo dõi phiên để không mất việc khi quên chốt, mở nhiều phiên song song, hoặc hội thoại bị nén.",
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "bash scripts/phien.sh mo codex", "commandWindows": "\"C:\\Program Files\\Git\\bin\\bash.exe\" scripts/phien.sh mo codex", "statusMessage": "Đang đọc sổ nhớ", "timeout": 20 } ] }
+    ],
+    "PreCompact": [
+      { "hooks": [ { "type": "command", "command": "bash scripts/phien.sh nen codex", "commandWindows": "\"C:\\Program Files\\Git\\bin\\bash.exe\" scripts/phien.sh nen codex", "timeout": 20 } ] }
+    ],
+    "SessionEnd": [
+      { "hooks": [ { "type": "command", "command": "bash scripts/phien.sh dong codex", "commandWindows": "\"C:\\Program Files\\Git\\bin\\bash.exe\" scripts/phien.sh dong codex", "timeout": 20 } ] }
+    ]
+  }
+}

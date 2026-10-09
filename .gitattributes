@@ -1,0 +1,6 @@
+# Script bash phải giữ xuống dòng kiểu LF, kể cả khi tải về máy Windows (Git Bash không chạy được CRLF).
+*.sh       text eol=lf
+*.command  text eol=lf
+# Script Windows giữ CRLF.
+*.bat      text eol=crlf
+*.ps1      text eol=crlf

@@ -5,9 +5,15 @@
       "Bash(ls:*)",
       "Bash(date:*)",
       "Bash(mkdir -p cua-toi/:*)",
+      "Bash(bash scripts/phien.sh:*)",
+      "Bash(bash scripts/ban-giao.sh:*)",
+      "Bash(bash scripts/ghi-them.sh:*)",
+      "Bash(bash scripts/du-an.sh:*)",
+      "Bash(bash scripts/dem-viec.sh:*)",
+      "Bash(bash scripts/luu-so.sh:*)",
+      "Bash(bash scripts/khoi-phuc.sh lich-su:*)",
+      "Bash(bash scripts/khoi-phuc.sh xem:*)",
       "Bash(git -C cua-toi status:*)",
-      "Bash(git -C cua-toi add:*)",
-      "Bash(git -C cua-toi commit:*)",
       "Bash(git -C cua-toi log:*)",
       "Bash(git -C cua-toi diff:*)"
     ],
@@ -16,8 +22,24 @@
       "Bash(sudo:*)",
       "Bash(git push:*)",
       "Bash(git -C cua-toi push:*)",
+      "Bash(git -C cua-toi reset:*)",
+      "Bash(git -C cua-toi checkout:*)",
+      "Bash(git -C cua-toi restore:*)",
+      "Bash(git -C cua-toi clean:*)",
+      "Bash(git -C cua-toi rebase:*)",
       "Read(./.env)",
       "Read(./.env.*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/phien.sh\" mo claude", "timeout": 20 } ] }
+    ],
+    "PreCompact": [
+      { "hooks": [ { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/phien.sh\" nen claude", "timeout": 20 } ] }
+    ],
+    "SessionEnd": [
+      { "hooks": [ { "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/phien.sh\" dong claude", "timeout": 20 } ] }
     ]
   }
 }
