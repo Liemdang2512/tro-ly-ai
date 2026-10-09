@@ -8,7 +8,7 @@ Tài liệu cho người dựng và bảo trì bộ Trợ Lý AI (không dành c
 |---|---|---|---|
 | 0. Lõi | `AGENTS.md` | Chung | Quản trị |
 | 1. Hồ sơ | `cua-toi/ho-so.md`, `cua-toi/AGENTS.md` | Riêng | Trợ lý (qua thiết lập) + người dùng |
-| 2. Mẫu kỹ năng | `mau/ky-nang/*.md` (thay gói nghề từ v0.2) | Chung, làm khung khi tạo kỹ năng riêng | Quản trị |
+| 2. Mẫu kỹ năng | `mau/ky-nang/<loai-viec>/SKILL.md` (thay gói nghề từ v0.2) | Chung, làm khung khi tạo kỹ năng riêng | Quản trị |
 | 3. Dự án | `cua-toi/du-an/<NN_ten>/` (mỗi dự án một thư mục: bàn giao, tiến độ, quyết định, bài học, kiểm tra) | Riêng | Trợ lý qua `scripts/`, người dùng duyệt |
 | 4. Bộ nhớ | `cua-toi/quyet-dinh.md`, `bai-hoc.md`, `nhat-ky/` (mỗi phiên 1 file), `ky-nang/` | Riêng | Trợ lý, người dùng duyệt |
 | 5. Dữ liệu máy | `cua-toi/.tro-ly/` (phiên, khóa, đếm việc lặp lại) và `du-an/*/.tro-ly/` | Riêng | Chỉ script |
@@ -55,7 +55,7 @@ Luật nào trợ lý hay vi phạm → cân nhắc chuyển thành hook/permiss
 
 ## Thêm một mẫu kỹ năng
 
-1. Tạo `mau/ky-nang/<loai-viec>.md` theo `mau/ky-nang/_khung.md`. Tên file = tên loại việc (chữ thường không dấu, gạch nối).
+1. Tạo `mau/ky-nang/<loai-viec>/SKILL.md` theo `mau/ky-nang/_khung/SKILL.md`. Tên thư mục = tên loại việc (chữ thường không dấu, gạch nối). Có file mẫu dùng chung (ví dụ khung công văn) thì để cùng thư mục, `scripts/ky-nang.sh tao` chỉ chép `SKILL.md`, file khác trợ lý chép khi cần.
 2. Bắt buộc giữ 2 dòng đầu `# Kỹ năng: …` và `**Gọi khi:** …` (script đọc để giới thiệu ở đầu phiên), và mục `## Cách dùng` đủ 4 dòng.
 3. Để `{{VI_DU}}` cho `tao-ky-nang` điền ví dụ thật của người dùng.
 

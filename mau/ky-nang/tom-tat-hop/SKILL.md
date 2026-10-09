@@ -1,3 +1,8 @@
+---
+name: tom-tat-hop
+description: Tóm tắt cuộc họp. Gọi khi người dùng nói "tóm tắt cuộc họp …", "biên bản họp …"
+---
+
 # Kỹ năng: Tóm tắt cuộc họp
 **Gọi khi:** "tóm tắt cuộc họp …", "biên bản họp …"
 **Loại việc:** tom-tat-hop
@@ -7,6 +12,10 @@
 - **Cần chuẩn bị:** ghi chú, bản ghi âm đã chép ra chữ, danh sách người dự
 - **Kết quả:** biên bản ngắn; việc được giao có hạn → đề xuất ghi vào dự án liên quan
 - **Ví dụ:** {{VI_DU}}
+
+## File đi kèm
+<!-- File nằm cùng thư mục kỹ năng này. Liệt kê để trợ lý biết mở file nào; chưa có thì ghi "chưa có". -->
+{{FILE_DI_KEM}}
 
 ## Các bước
 1. Khuôn: **Mục đích → Quyết định đã chốt → Việc giao (ai · làm gì · hạn) → Vấn đề còn treo.**

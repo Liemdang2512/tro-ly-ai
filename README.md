@@ -100,7 +100,7 @@ Tất cả trong thư mục **`cua-toi`**. Đều là file chữ, mở bằng b�
 |---|---|
 | `ho-so.md` | Anh/chị là ai, thích làm việc thế nào |
 | `du-an/01_ten-du-an/` | **Mỗi dự án một thư mục**: `ban-giao.md` (đang tới đâu, bước tiếp), `tien-do.md`, `quyet-dinh.md`, `bai-hoc.md`, `kiem-tra.md`, `tai-lieu/` (anh/chị đưa), `san-pham/` (trợ lý làm ra) |
-| `ky-nang/HUONG-DAN.md` | Sổ tay các việc trợ lý đã học, kèm câu gọi |
+| `ky-nang/` | **Mỗi kỹ năng một thư mục**: cách làm (`SKILL.md`) + mẫu, bảng giá, ví dụ của anh/chị. `HUONG-DAN.md` là sổ tay các việc trợ lý đã học, kèm câu gọi |
 | `nhat-ky/` | Mỗi buổi làm việc một trang |
 
 - Trợ lý **không ghi** mật khẩu, số tài khoản, OTP và những gì anh/chị dặn không ghi.

@@ -103,14 +103,9 @@ in_dau_phien() {
     echo "- $(basename "$g" .txt) · $(lay "$g" cong_cu) · $(lay "$g" bat_dau) · dự án: $(lay "$g" du_an) · hội thoại: $(lay "$g" hoi_thoai)"
   done < <(ls -t "$P"/*.txt 2>/dev/null)
 
-  # Kỹ năng riêng
-  n=0
-  for g in "$CUA_TOI"/ky-nang/*.md; do
-    [ -f "$g" ] && [ "$(basename "$g")" != "HUONG-DAN.md" ] || continue
-    [ $n = 0 ] && { echo; echo "Kỹ năng riêng của người dùng (khớp việc nào thì đọc file đó và làm theo; sổ tay: cua-toi/ky-nang/HUONG-DAN.md):"; }
-    n=$((n + 1))
-    echo "- $(sed -n 's/^# Kỹ năng: //p' "$g" | head -1) — $(sed -n 's/^\*\*Gọi khi:\*\* //p' "$g" | head -1) → cua-toi/ky-nang/$(basename "$g")"
-  done
+  # Kỹ năng riêng (mỗi kỹ năng một thư mục cua-toi/ky-nang/<loai>/SKILL.md)
+  g="$(bash "$ROOT/scripts/ky-nang.sh" ds)"
+  [ -n "$g" ] && { echo; echo "Kỹ năng riêng của người dùng (khớp việc nào thì đọc SKILL.md đó, mở file đi kèm trong cùng thư mục, rồi làm theo; sổ tay: cua-toi/ky-nang/HUONG-DAN.md):"; echo "$g"; }
 
   # Việc lặp lại nên đóng gói
   g="$(bash "$ROOT/scripts/dem-viec.sh" de-xuat --nhac 2>/dev/null)"

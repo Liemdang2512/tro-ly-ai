@@ -37,5 +37,7 @@ done
 if [ -f "$CUA_TOI/AGENTS.md" ]; then
   mkdir -p "$CUA_TOI/ky-nang"
   [ -f "$CUA_TOI/ky-nang/HUONG-DAN.md" ] || cp "$ROOT/mau/cua-toi/ky-nang-HUONG-DAN.md" "$CUA_TOI/ky-nang/HUONG-DAN.md"
+  # Kỹ năng kiểu cũ (1 file .md) → thư mục. Nội dung giữ nguyên, có lưu lịch sử trước và sau.
+  bash "$ROOT/scripts/ky-nang.sh" chuyen
 fi
 exit 0

@@ -1,3 +1,8 @@
+---
+name: tra-loi-khach
+description: Trả lời khách hàng. Gọi khi người dùng nói "trả lời khách …", "soạn tin trả lời …"
+---
+
 # Kỹ năng: Trả lời khách hàng
 **Gọi khi:** "trả lời khách …", "soạn tin trả lời …"
 **Loại việc:** tra-loi-khach
@@ -7,6 +12,10 @@
 - **Cần chuẩn bị:** tin nhắn hoặc email của khách (dán vào), chính sách liên quan
 - **Kết quả:** bản trả lời sẵn để gửi, kèm danh sách điểm đang hứa với khách
 - **Ví dụ:** {{VI_DU}}
+
+## File đi kèm
+<!-- File nằm cùng thư mục kỹ năng này. Liệt kê để trợ lý biết mở file nào; chưa có thì ghi "chưa có". -->
+{{FILE_DI_KEM}}
 
 ## Các bước
 1. Xác định: khách là ai, kênh gì, giọng gì (trang trọng hay thân mật, xem hồ sơ).

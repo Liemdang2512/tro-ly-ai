@@ -17,7 +17,7 @@ description: Tóm tắt phiên làm việc và cập nhật sổ nhớ — bàn 
 Với mỗi việc đáng kể đã làm trong phiên (báo giá, trả lời email khách, báo cáo tuần…):
 1. `bash scripts/dem-viec.sh loai` → xem các tên loại việc đã có. Cùng loại thì **dùng lại đúng tên cũ**.
 2. `bash scripts/dem-viec.sh ghi <loai-viec> <thư mục dự án | -> "<mô tả 1 dòng>"`.
-   Việc làm bằng một kỹ năng riêng → loại việc = tên file kỹ năng (để biết kỹ năng nào hay dùng).
+   Việc làm bằng một kỹ năng riêng → loại việc = tên thư mục kỹ năng (để biết kỹ năng nào hay dùng).
 3. `bash scripts/dem-viec.sh de-xuat` → loại việc nào hiện ra (≥ 3 lần, chưa có kỹ năng) thì đưa vào đề xuất ở bước 3.
 
 ## 3. Đề xuất cập nhật sổ

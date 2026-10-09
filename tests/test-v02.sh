@@ -86,12 +86,26 @@ bash "$S/dem-viec.sh" ghi bao-gia 01_bao-gia "lần 3" >/dev/null
 kt "3 lần thì đề xuất" 'bash "$S/dem-viec.sh" de-xuat | grep -q "bao-gia: 3 lần"'
 kt "đầu phiên có nhắc" 'mo f6 claude | grep -q "bao-gia: 3 lần"'
 kt "trong 7 ngày không nhắc lại lúc mở phiên" '! mo g7 claude | grep -q "bao-gia: 3 lần"'
-cp "$R/mau/ky-nang/bao-gia.md" "$C/ky-nang/bao-gia.md"
+bash "$S/ky-nang.sh" tao bao-gia >/dev/null
 kt "có kỹ năng rồi thì thôi đề xuất" '[ -z "$(bash "$S/dem-viec.sh" de-xuat)" ]'
 kt "đầu phiên liệt kê kỹ năng riêng + câu gọi" 'mo h8 claude | grep -q "Làm báo giá — \"làm báo giá cho"'
 for i in 1 2 3; do bash "$S/dem-viec.sh" ghi tra-loi-khach - "x" >/dev/null; done
 bash "$S/dem-viec.sh" khong tra-loi-khach >/dev/null
 kt "người dùng từ chối thì thôi đề xuất" '[ -z "$(bash "$S/dem-viec.sh" de-xuat)" ]'
+
+echo "7b. Kỹ năng dạng thư mục"
+kt "tạo từ mẫu trùng tên: có SKILL.md + phần đầu chuẩn" '[ -f "$C/ky-nang/bao-gia/SKILL.md" ] && head -2 "$C/ky-nang/bao-gia/SKILL.md" | grep -q "^name: bao-gia"'
+kt "không tạo trùng kỹ năng đã có" '! bash "$S/ky-nang.sh" tao bao-gia 2>/dev/null'
+bash "$S/ky-nang.sh" tao gui-hoa-don >/dev/null
+kt "không có mẫu trùng tên → dùng khung trống, điền sẵn tên loại việc" 'grep -q "^name: gui-hoa-don" "$C/ky-nang/gui-hoa-don/SKILL.md" && grep -q "{{TEN}}" "$C/ky-nang/gui-hoa-don/SKILL.md"'
+printf '# Kỹ năng: Báo cáo cũ\n**Gọi khi:** "làm báo cáo cũ"\n\nNội dung cũ\n' > "$C/ky-nang/bao-cao-cu.md"
+printf '| "làm báo cáo cũ" | cua-toi/ky-nang/bao-cao-cu.md |\n' >> "$C/AGENTS.md"
+printf -- '- file: `ky-nang/bao-cao-cu.md`\n' >> "$C/ky-nang/HUONG-DAN.md"
+bash "$S/nang-cap.sh" >/dev/null
+kt "nâng cấp tự chuyển kỹ năng kiểu cũ sang thư mục, giữ nội dung" '[ ! -f "$C/ky-nang/bao-cao-cu.md" ] && grep -q "Nội dung cũ" "$C/ky-nang/bao-cao-cu/SKILL.md" && grep -q "^name: bao-cao-cu" "$C/ky-nang/bao-cao-cu/SKILL.md"'
+kt "đường dẫn trong AGENTS.md và sổ tay được sửa theo" 'grep -q "ky-nang/bao-cao-cu/SKILL.md" "$C/AGENTS.md" && grep -q "ky-nang/bao-cao-cu/SKILL.md" "$C/ky-nang/HUONG-DAN.md"'
+kt "sổ tay HUONG-DAN không bị coi là kỹ năng" '! bash "$S/ky-nang.sh" ds | grep -q "HUONG-DAN"'
+kt "đầu phiên liệt kê cả kỹ năng vừa chuyển" 'mo k9 claude | grep -q "Báo cáo cũ — \"làm báo cáo cũ\""'
 
 echo "8. Chuyển dữ liệu v0.1"
 cat > "$C/du-an/hop-dong-y.md" <<'EOF'

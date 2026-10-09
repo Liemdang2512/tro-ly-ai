@@ -1,3 +1,8 @@
+---
+name: chuan-bi-quyet-dinh
+description: Chuẩn bị ra quyết định. Gọi khi người dùng nói "phân tích giúp nên chọn …", "so sánh phương án …"
+---
+
 # Kỹ năng: Chuẩn bị ra quyết định
 **Gọi khi:** "phân tích giúp nên chọn …", "so sánh phương án …"
 **Loại việc:** chuan-bi-quyet-dinh
@@ -7,6 +12,10 @@
 - **Cần chuẩn bị:** câu hỏi cần quyết, thông tin, số liệu đang có
 - **Kết quả:** bảng phương án + khuyến nghị; người dùng chốt thì ghi vào sổ quyết định
 - **Ví dụ:** {{VI_DU}}
+
+## File đi kèm
+<!-- File nằm cùng thư mục kỹ năng này. Liệt kê để trợ lý biết mở file nào; chưa có thì ghi "chưa có". -->
+{{FILE_DI_KEM}}
 
 ## Các bước
 1. Nêu rõ câu hỏi cần quyết.

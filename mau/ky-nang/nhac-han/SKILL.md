@@ -1,3 +1,8 @@
+---
+name: nhac-han
+description: Theo dõi và nhắc hạn. Gọi khi người dùng nói "nhắc hạn …", "sắp tới hạn gì"
+---
+
 # Kỹ năng: Theo dõi và nhắc hạn
 **Gọi khi:** "nhắc hạn …", "sắp tới hạn gì"
 **Loại việc:** nhac-han
@@ -7,6 +12,10 @@
 - **Cần chuẩn bị:** tên việc (thuế, hợp đồng, bảo hiểm, giấy phép…), ngày hạn
 - **Kết quả:** danh sách hạn trong 14 ngày tới, lưu trong dự án "Lịch hạn"
 - **Ví dụ:** {{VI_DU}}
+
+## File đi kèm
+<!-- File nằm cùng thư mục kỹ năng này. Liệt kê để trợ lý biết mở file nào; chưa có thì ghi "chưa có". -->
+{{FILE_DI_KEM}}
 
 ## Các bước
 1. Chưa có dự án "Lịch hạn" → `bash scripts/du-an.sh tao lich-han "Lịch hạn"`.

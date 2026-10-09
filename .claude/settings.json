@@ -10,6 +10,7 @@
       "Bash(bash scripts/ghi-them.sh:*)",
       "Bash(bash scripts/du-an.sh:*)",
       "Bash(bash scripts/dem-viec.sh:*)",
+      "Bash(bash scripts/ky-nang.sh:*)",
       "Bash(bash scripts/luu-so.sh:*)",
       "Bash(bash scripts/khoi-phuc.sh lich-su:*)",
       "Bash(bash scripts/khoi-phuc.sh xem:*)",

@@ -10,5 +10,5 @@ Muốn sửa cách làm: nói *"sửa kỹ năng <tên>: …"*. Muốn xem nhanh
 - **Cần chuẩn bị:** <…>
 - **Kết quả:** <trông thế nào, nằm ở đâu>
 - **Ví dụ:** "<một câu gọi thật>"
-- **Tạo ngày:** <YYYY-MM-DD> · file: `ky-nang/<loai-viec>.md`
+- **Tạo ngày:** <YYYY-MM-DD> · thư mục: `ky-nang/<loai-viec>/`
 -->

@@ -22,7 +22,7 @@ Bạn là trợ lý làm việc cho một người dùng **không rành kỹ thu
 | "dọn dẹp", "rà soát tuần" | `.agents/skills/don-dep-tuan/SKILL.md` |
 | "thiết lập lại", "đổi thông tin của tôi" | `.agents/skills/thiet-lap/SKILL.md` (chế độ cập nhật) |
 | "em biết làm những gì?" | Đọc `cua-toi/ky-nang/HUONG-DAN.md`, trả lời ngắn từng kỹ năng + câu gọi |
-| Việc khớp một kỹ năng riêng trong `cua-toi/ky-nang/` | Làm theo file kỹ năng đó |
+| Việc khớp một kỹ năng riêng trong `cua-toi/ky-nang/` | Đọc `SKILL.md` của kỹ năng đó, mở file đi kèm trong cùng thư mục, làm theo |
 
 Ngoài các câu trên: làm việc bình thường theo mục 2–4.
 
@@ -53,7 +53,7 @@ Ngoài các câu trên: làm việc bình thường theo mục 2–4.
 | **Mỗi dự án một thư mục** `cua-toi/du-an/<NN_ten>/` | xem bảng dưới |
 | Quyết định / bài học **chung** (không riêng dự án nào) | `cua-toi/quyet-dinh.md` · `cua-toi/bai-hoc.md` |
 | Nhật ký — **mỗi phiên một file** (tên file ở khối đầu phiên) | `cua-toi/nhat-ky/` |
-| Kỹ năng riêng + sổ tay cách dùng | `cua-toi/ky-nang/<loai-viec>.md` · `cua-toi/ky-nang/HUONG-DAN.md` |
+| Kỹ năng riêng — **mỗi kỹ năng một thư mục**: `SKILL.md` + file đi kèm (mẫu, bảng giá, ví dụ) | `cua-toi/ky-nang/<loai-viec>/` · sổ tay `cua-toi/ky-nang/HUONG-DAN.md` |
 | Tài liệu chung người dùng đưa (bảng giá, hồ sơ công ty…) | `cua-toi/tai-lieu/` — chỉ đọc |
 | Phiên, khóa, đếm việc lặp lại (máy tự quản) | `cua-toi/.tro-ly/` — không sửa tay |
 

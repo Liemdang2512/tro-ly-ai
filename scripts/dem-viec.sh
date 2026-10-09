@@ -31,7 +31,7 @@ case "${1:-}" in
     bay_gio_s="$(giay)"
     cut -f2 "$DS" | sort | uniq -c | sort -rn | while read -r so loai; do
       [ "$so" -ge "$NGUONG" ] || continue
-      [ -f "$CUA_TOI/ky-nang/$loai.md" ] && continue
+      bash "$ROOT/scripts/ky-nang.sh" co "$loai" && continue
       grep -qx "$loai" "$KHONG" 2>/dev/null && continue
       if [ "${2:-}" = "--nhac" ]; then
         lan="$(awk -F'\t' -v l="$loai" '$1 == l {t = $2} END {print t + 0}' "$NHAC" 2>/dev/null)"
