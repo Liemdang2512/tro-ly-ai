@@ -9,7 +9,7 @@
 4. Bước 5 "Tự kiểm chéo" của prompt **cộng thêm** kiểm chứng độc lập (`.luat-chung/kiem-chung.md` bước 1–2, `tu-hoc.md` vòng 6), không thay thế nó: tự kiểm theo mục A–E xong, file / nghiên cứu có số liệu, luật, giá thì vẫn gọi AI thứ hai kiểm. Thiếu một trong hai thì chưa giao.
 5. "Gửi link duyệt" khi làm qua Telegram: gửi **1 bản duyệt** (1 file hoặc 1 link), đầu bản ghi khác gì bản cũ · kết quả kiểm · điểm cần Sếp chốt. Sếp OK mới xuất bản cuối hoặc ghép vào file tổng.
 6. `17_DU_KIEN_NGHIEP_VU.md`: mọi ngưỡng tiền là [Giả định], dùng cho demo, không đưa ra ngoài công ty.
-7. Báo cáo ngày 17:47 và rà tuần thứ Hai 08:33: lịch máy tự chạy `cai-dat/bao-cao-dinh-ky.sh` (cài khi bấm CAP-NHAT trên máy có bot). Lịch mở một phiên riêng, đọc `so-viec.md`, `nhat-ky/`, `bao-cao/` của phòng, lưu `bao-cao/<ngày>_bao-cao-ngay.md` hoặc `<ngày>_ra-tuan.md` rồi bot gửi vào topic của phòng. Phiên đang chat với Sếp không tự gửi báo cáo này; Sếp hỏi lại thì đọc file đã lưu. Vì vậy **ghi `so-viec.md` đủ và đúng ngày** — báo cáo chỉ dựa vào đó.
+7. Báo cáo ngày 17:47 và rà tuần thứ Hai 08:33: chính phiên bot tự đặt lịch khi khởi động và tự gửi vào topic của phòng — cách làm ở `.luat-chung/tu-hoc.md` vòng 7.
 8. Sửa prompt: sửa file ở `mocha/00_CHUNG/lam-viec-voi-sep/` trong repo theo vòng 7 bước (`20_MO_HINH_HUAN_LUYEN.md`), tăng phiên bản, ghi khác gì → Sếp duyệt → đưa lên `main` → máy dùng bấm CAP-NHAT. Không sửa bản chép trong `.luat-chung/`.
 
 ## Danh sách file
