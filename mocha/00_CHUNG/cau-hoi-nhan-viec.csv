@@ -1,5 +1,19 @@
 ma,phan,phong,cau_hoi,goi_y,ghi_vao
 0.1,0. Xưng hô,,Em nên gọi mình là gì ạ (anh/chị + tên)?,Ví dụ: chị Quyên,ho-so-phong.md (đầu file)
+M1,M. Mô hình kinh doanh,,{Goi} mô tả giúp em ngắn gọn mô hình kinh doanh hiện tại ạ? Tách theo từng nhãn và từng kênh.,"nhóm sản phẩm · nhãn mẹ/nhãn con · khách lẻ, đại lý, gia công B2B",bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M2,M. Mô hình kinh doanh,,"Khách hàng chính là ai, họ biết đến công ty qua kênh nào (giới thiệu, Facebook, Zalo, sàn, sự kiện…)? Mỗi kênh chiếm khoảng bao nhiêu % doanh thu ạ?",tỷ trọng doanh thu theo kênh và theo nhãn,bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M3,M. Mô hình kinh doanh,,"Tiền ra vào đâu nhiều nhất (giá vốn, quảng cáo, nhân sự, kho vận…)? Tỷ lệ gần đúng mỗi khoản ạ?","% trên doanh thu; ước lượng cũng được, ghi rõ là ước lượng",bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M4,M. Mô hình kinh doanh,,"Chuỗi giá trị đi thế nào, khâu nào công ty tự làm, khâu nào thuê ngoài ạ?",ý tưởng → công thức → sản xuất/gia công → kho → bán → giao → chăm sóc,bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M5,M. Mô hình kinh doanh,,"Pháp nhân nào bán qua kênh nào, nhãn nào thuộc pháp nhân nào ạ?",không ghi số tài khoản,bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M6,M. Mô hình kinh doanh,,"Mùa vụ và nhịp: tháng cao điểm, chu kỳ chốt sổ, các hạn cố định trong tháng là gì ạ?","vd: chốt đề xuất chi 16h, khoá sổ ngày 05, ra P&L ngày 25",bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M7,M. Mô hình kinh doanh,,Lãi của công ty đến từ đâu? 3–5 chỉ số sống còn là gì ạ?,biên lợi nhuận · chi phí mỗi đơn · tỷ lệ hoàn · vòng quay tồn,bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M8,M. Mô hình kinh doanh,,"Có ràng buộc đặc thù ngành nào em phải theo không ạ (công bố mỹ phẩm, quy định quảng cáo, dữ liệu khách hàng)?",nêu tên văn bản nếu biết; em sẽ tra lại hiệu lực,bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M9,M. Mô hình kinh doanh,,Mục tiêu 12 tháng tới và việc {goi} đang ưu tiên nhất là gì ạ? Ngân sách có thể đầu tư cho AI giai đoạn tới khoảng bao nhiêu?,một con số hoặc một khoảng,bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+M10,M. Mô hình kinh doanh,,"Phong cách thương hiệu: giọng văn, cách xưng hô với khách, từ nên dùng, từ cấm, câu quảng cáo mỹ phẩm không được dùng ạ? {Goi} gửi kèm 2–3 bài mẫu đúng giọng được không?",Excel không đính kèm được file: gửi ngay sau phiếu,bao-cao/<ngày>_mo-hinh-kinh-doanh.md (người quản trị chép vào 00_CHUNG/mo-hinh-kinh-doanh.md)
+P1,P. Vị trí phòng,,"Trong chuỗi giá trị của công ty, phòng {phong} đứng ở khâu nào, giữ phần nào của tiền vào hoặc tiền ra ạ?",dựa trên mô hình kinh doanh đã có ở 00_CHUNG/mo-hinh-kinh-doanh.md,ho-so-phong.md mục 2 + mục 6
+P2,P. Vị trí phòng,,Con số nào phòng {phong} sinh ra làm đổi một chỉ số sống còn của công ty? Sai thì lệch dòng nào của lãi lỗ ạ?,chọn trong 3–5 chỉ số sống còn của công ty,ho-so-phong.md mục 8
+P3,P. Vị trí phòng,,"Pháp nhân, hạn cố định trong tháng và quy định ngành ảnh hưởng việc của phòng {phong} thế nào ạ?","pháp nhân nào, hạn nào, văn bản nào",ho-so-phong.md mục 1 + mục 6
+P4,P. Vị trí phòng,,"Phòng {phong} hiện có bao nhiêu người, mỗi người đang đảm nhận vị trí công việc gì ạ?","không ghi lương, đánh giá cá nhân",ho-so-phong.md mục 2
 A1,A. Vai trò,,{Goi} muốn em đóng vai trò gì trong phòng {phong} ạ?,Trợ lý của trưởng phòng · chuyên viên phân tích số liệu · người soạn báo cáo · người theo dõi tiến độ,ho-so-phong.md › Vai trò của em
 A2,A. Vai trò,,Nhiệm vụ chính của em là gì ạ? {Goi} kể giúp em 3 việc muốn giao em nhất.,1) … 2) … 3) …,ho-so-phong.md › Vai trò của em
 A3a,A. Vai trò,,Việc thứ 1 ở câu A2: em lấy dữ liệu ở đâu · làm xong gửi cho ai · cần lúc nào ạ?,Dữ liệu từ file Sheets … · gửi trưởng phòng · 9h sáng hằng ngày,ho-so-phong.md › Vai trò của em
@@ -8,6 +22,14 @@ A3c,A. Vai trò,,Việc thứ 3 ở câu A2: em lấy dữ liệu ở đâu · l
 A4,A. Vai trò,,Em báo cáo trực tiếp cho ai ạ? Ngoài {goi} còn ai được giao việc cho em không?,,ho-so-phong.md mục 2
 A5,A. Vai trò,,Việc nào em được TỰ LÀM LUÔN · việc nào PHẢI HỎI {GOI} TRƯỚC · việc nào em TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM ạ?,Không được làm: tự gửi khách · tự duyệt chi · sửa số liệu gốc,ho-so-phong.md › Vai trò của em + mục 4
 A6,A. Vai trò,,{Goi} muốn em trả lời thế nào ạ: ngắn gọn hay chi tiết · có cần kẻ bảng không?,Ngắn gọn · kết luận trước · có bảng khi có số,ho-so-phong.md › Vai trò của em
+O1,O. Đầu ra,,Phòng {phong} cần em làm ra những loại file/báo cáo nào ạ? Mỗi loại đặt tên và mã gì?,vd: Báo cáo tuần chi phí · KT-BC-01,ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
+O2,O. Đầu ra,,"Mỗi loại file ai nhận, để quyết việc gì ạ?",tên người + việc cần quyết,ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
+O3,O. Đầu ra,,Mỗi loại file {goi} muốn nhận dạng nào (tin nhắn · Sheets · Word · PDF) và đặt tên file thế nào ạ?,vd: YYYY-MM-DD_<loại>_<mô-tả>,ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
+O4,O. Đầu ra,,"Mỗi loại file cần vào lúc nào, bao lâu một lần ạ?","vd: thứ 2, trước 9h",ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
+O5,O. Đầu ra,,"Trong mỗi loại file gồm những mục nào, theo thứ tự nào, tên từng mục là gì? Bảng có những cột gì ạ?","mục và cột cố định, không đổi mỗi lần",ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
+O6,O. Đầu ra,,{Goi} gửi em 2–3 mẫu kết quả thấy tốt nhất cho mỗi loại file được không ạ?,Excel không đính kèm được file: gửi ngay sau phiếu,ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
+O7,O. Đầu ra,,Thế nào thì một file được coi là ĐẠT ạ?,"con số hoặc có/không, vd: mọi số có nguồn · lệch đối soát < 0,5%",ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
+O8,O. Đầu ra,,Ai duyệt mỗi loại file? Vượt ngưỡng nào thì chuyển cấp trên ạ?,tên người duyệt + ngưỡng bằng số,ho-so-phong.md mục 9 (phiếu đầu ra) + du-lieu/10_mau-dau-ra-tot/
 B7,B. Làm đúng,,Một kết quả thế nào thì {goi} coi là ĐẠT ạ?,Đúng số · đúng kỳ · đủ các nhãn · có đề xuất hành động,ho-so-phong.md › Checklist trước khi giao
 B8,B. Làm đúng,,Trước đây người làm việc này hay sai ở đâu ạ để em tránh?,,ho-so-phong.md › Checklist trước khi giao
 B9,B. Làm đúng,,Chi tiết nào em phải soát hai lần ạ?,Số tiền · mã · ngày · tên khách,ho-so-phong.md › Checklist trước khi giao
@@ -17,8 +39,6 @@ C12,C. Hiểu phòng,,Phòng dùng những bộ mã nào · ai giữ mã ạ?,SK
 C13,C. Hiểu phòng,,Có quy định nào em bắt buộc phải theo không ạ (nội bộ hoặc pháp luật)?,,ho-so-phong.md mục 6
 C14,C. Hiểu phòng,,Có từ viết tắt · tên gọi nội bộ · tên người nào em cần biết không ạ?,,ho-so-phong.md mục 3
 C15,C. Hiểu phòng,,Phòng mình nhận việc từ phòng nào và giao kết quả cho phòng nào ạ?,,ho-so-phong.md mục 6
-D16,D. Đầu ra,,{Goi} gửi em 2–3 mẫu kết quả thấy tốt nhất được không ạ? (Excel không đính kèm được file: gửi lại phiếu xong thì gửi tiếp luôn các file mẫu · em tự lưu),Ghi tên các file sẽ gửi,du-lieu/10_mau-dau-ra-tot/ + mục 9
-D17,D. Đầu ra,,Kết quả {goi} muốn nhận dạng gì (tin nhắn · Sheets · Word · PDF) · bao lâu một lần · ai đọc để quyết việc gì ạ?,,ho-so-phong.md mục 9
 E18,E. Công cụ,,Dữ liệu của phòng đang nằm ở đâu ạ?,Drive · Google Sheets · Gmail · Zalo · Pancake · MISA · phần mềm khác,ho-so-phong.md mục 7 › Nhu cầu kết nối
 E19,E. Công cụ,,Với từng chỗ ở câu E18: em chỉ cần XEM hay cần SỬA/GHI vào ạ?,,ho-so-phong.md mục 7 › Nhu cầu kết nối
 E20,E. Công cụ,,Có dữ liệu nào {goi} không muốn em đụng vào không ạ?,Bảng lương · sao kê · hồ sơ cá nhân,ho-so-phong.md mục 7 + mục 4

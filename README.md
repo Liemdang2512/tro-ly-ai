@@ -79,6 +79,7 @@ Cứ nói chuyện bình thường. Có **3 câu đặc biệt**:
 
 Thêm vài câu hữu ích:
 - **"em biết làm những gì?"**: xem các kỹ năng riêng và câu gọi.
+- **"kiểm chứng [file]"** / **"thêm quy tắc kiểm chứng: …"**: nhờ một AI khác kiểm chéo số liệu, luật, giá trước khi dùng; thêm quy tắc kiểm riêng của anh/chị.
 - **"tạo kỹ năng [tên việc]"**: dạy trợ lý một việc hay lặp lại. Việc nào anh/chị làm từ 3 lần, trợ lý sẽ **tự gợi ý** đóng gói.
 - **"khôi phục"**: lấy lại sổ của lúc trước nếu lỡ ghi nhầm.
 - **"dọn dẹp"**: mỗi tuần một lần, trợ lý rà lại sổ, gộp trùng, bỏ cái cũ.

@@ -47,6 +47,14 @@ Người dùng **không rành kỹ thuật**. Giữ giọng thân thiện, câu 
 **F. Công cụ**
 14. Anh/chị đang dùng: Gmail/Outlook? Lịch Google/Outlook? Lưu tài liệu ở Google Drive/OneDrive/máy tính? Nhắn việc qua Zalo/Telegram/Slack? (chỉ để em biết, không cần kết nối ngay)
 
+**G. Bối cảnh doanh nghiệp (TÙY CHỌN — chỉ hỏi nếu người dùng là chủ/quản lý hoặc làm việc cần hiểu công ty; hỏi trước: "Anh/chị có muốn em hiểu thêm cách công ty kinh doanh để làm đúng ngữ cảnh không? Khoảng 5 phút." Nói không thì bỏ qua cả nhóm)**
+15. Công ty bán gì, cho ai? Tách theo từng nhãn / kênh (nếu có).
+16. Khách chính biết đến công ty qua kênh nào? Mỗi kênh chiếm khoảng bao nhiêu % doanh thu?
+17. Tiền ra vào đâu nhiều nhất? Khâu nào tự làm, khâu nào thuê ngoài?
+18. Có mùa cao điểm, hạn cố định hoặc quy định đặc thù ngành em phải biết không?
+19. Lãi đến từ đâu, 3–5 chỉ số sống còn là gì? Mục tiêu 12 tháng tới?
+20. Giọng văn thương hiệu thế nào? Từ nào nên dùng, từ/câu nào cấm? Có bài mẫu đúng giọng không?
+
 ## Xác nhận
 
 Tóm tắt lại **tối đa 12 dòng** bằng lời thường (không nhắc tên file): gọi là gì, làm gì, 3 việc lặp lại, cách trả lời, những gì không ghi nhớ, việc phải hỏi trước, các dự án. Hỏi: *"Em hiểu vậy đúng chưa? Có gì cần sửa không?"* — sửa tới khi người dùng đồng ý.
@@ -58,14 +66,15 @@ Mã phiên lấy từ khối `[Trợ Lý AI — thông tin đầu phiên]`. Khô
 1. `cua-toi/ho-so.md` ← `mau/cua-toi/ho-so.md` (nhóm A, B, C, F).
 2. `cua-toi/quyet-dinh.md`, `cua-toi/bai-hoc.md` ← mẫu tương ứng (để trống bảng).
 3. Tạo `cua-toi/nhat-ky/`, `cua-toi/tai-lieu/`, `cua-toi/ky-nang/` (mỗi thư mục một file `.gitkeep`). Chép `mau/cua-toi/ky-nang-HUONG-DAN.md` → `cua-toi/ky-nang/HUONG-DAN.md`.
-4. Mỗi dự án ở câu 13:
+4. `cua-toi/quy-tac-kiem-chung.md` ← `mau/cua-toi/quy-tac-kiem-chung.md` (bảng trống). Nếu người dùng đã trả lời nhóm G: `cua-toi/mo-hinh-kinh-doanh.md` ← `mau/cua-toi/mo-hinh-kinh-doanh.md` (câu 15–19) và `cua-toi/phong-cach-thuong-hieu.md` ← `mau/cua-toi/phong-cach-thuong-hieu.md` (câu 20). Chưa biết thì để `[chưa rõ]`.
+5. Mỗi dự án ở câu 13:
    1. `bash scripts/du-an.sh tao <ten-khong-dau> "<Tên dự án>"`
    2. Điền `tong-quan.md` của dự án (mục tiêu, hạn chót, người liên quan, bối cảnh).
    3. Ghi khối bàn giao đầu tiên (đang ở, bước tiếp): `bash scripts/ban-giao.sh ghi <NN_ten> <mã phiên>`.
    4. Đặt trạng thái: `bash scripts/du-an.sh dat <NN_ten> buoc_tiep "…"`, và `han_chot` nếu có.
-5. **Cuối cùng mới tạo** `cua-toi/AGENTS.md` ← `mau/cua-toi/AGENTS.md`: luật riêng từ nhóm C, D; bảng dự án, mỗi dự án một dòng trỏ tới thư mục `du-an/<NN_ten>/`. File này là dấu hiệu "đã thiết lập xong". Tạo sau cùng để nếu bị ngắt giữa chừng, lần sau sẽ thiết lập lại thay vì chạy với hồ sơ thiếu.
-6. Ghi nhật ký phiên "Thiết lập lần đầu." qua `bash scripts/ghi-them.sh` (đường dẫn trong khối đầu phiên).
-7. `bash scripts/luu-so.sh "thiet-lap: ho so ban dau"`.
+6. **Cuối cùng mới tạo** `cua-toi/AGENTS.md` ← `mau/cua-toi/AGENTS.md`: luật riêng từ nhóm C, D; bảng dự án, mỗi dự án một dòng trỏ tới thư mục `du-an/<NN_ten>/`. File này là dấu hiệu "đã thiết lập xong". Tạo sau cùng để nếu bị ngắt giữa chừng, lần sau sẽ thiết lập lại thay vì chạy với hồ sơ thiếu.
+7. Ghi nhật ký phiên "Thiết lập lần đầu." qua `bash scripts/ghi-them.sh` (đường dẫn trong khối đầu phiên).
+8. `bash scripts/luu-so.sh "thiet-lap: ho so ban dau"`.
 
 ## Kết thúc
 

@@ -96,3 +96,10 @@ Khi người dùng nhắn "rà tuần" (hoặc "tổng kết tuần"): đọc `s
 3. Kỹ năng mới tạo / cần cập nhật; loại việc sắp đủ 3 lần.
 4. Bài học mới trong tuần.
 5. Các mục `ho-so-phong.md` còn `[Cần hỏi]` — chọn tối đa 3 câu quan trọng nhất để hỏi.
+
+## Vòng 6 — Kiểm chứng độc lập trước khi giao
+
+Mọi file, báo cáo, nghiên cứu hoặc câu trả lời có số liệu / luật / giá / tin thị trường: **trước khi gửi người dùng**, đọc `.luat-chung/kiem-chung.md` và làm theo (gọi AI thứ hai kiểm, sửa, gắn khối "Kết quả kiểm chứng").
+- Không tự ghi "đã kiểm chứng" khi chưa chạy. Chưa kiểm được thì tiêu đề ghi `CHƯA KIỂM CHỨNG` kèm lý do.
+- Lỗi bị bắt: đề xuất dòng vào `bai-hoc.md` kèm mã (vd "sai ở O5") theo vòng 2.
+- Phiếu đầu ra (O1–O8): chưa có cho loại file đang làm → hỏi, hoặc gắn nhãn `[Tạm]`. Không tự đặt khuôn.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0 — 2026-10-12
+- **Trợ lý chung:** thêm kỹ năng `kiem-chung` (AI thứ hai kiểm chéo trước khi giao; quy tắc kiểm riêng ở `cua-toi/quy-tac-kiem-chung.md`, ghi qua `scripts/ghi-them.sh`). `AGENTS.md` yêu cầu chạy kiểm chứng cho file/báo cáo có số liệu và đọc bối cảnh công ty khi soạn nội dung ra ngoài. `thiet-lap` có nhóm câu tùy chọn về bối cảnh doanh nghiệp. `tao-ky-nang` hỏi thêm khuôn đầu ra và người duyệt. Thêm 3 mẫu trong `mau/cua-toi/`.
+- **Agent phòng ban MOCHA:** `mocha/00_CHUNG/kiem-chung.md` (cùng câu lệnh hệ thống) và vòng 6 trong `tu-hoc.md`. Ngân hàng câu hỏi thêm khối M (mô hình kinh doanh, M1–M10), P (vị trí phòng), O1–O8 (phiếu đầu ra, thay D16–D17). `setup-phong.md`: Bước 0 đọc mô hình kinh doanh, khuôn 12 câu riêng phòng, kiểm chéo bộ câu, Bước 6 chạy thử có kiểm chứng. 2 file mẫu hồ sơ công ty (bản thật ở `cua-toi`, không lên repo).
+- Chưa có: hook chặn gửi file chưa kiểm (cần xác nhận tên tool Telegram trên máy chạy).
+
 ## 0.3.0 — 2026-10-09
 - **Dự án dạng thư mục** `cua-toi/du-an/<NN_ten>/`: `tong-quan`, `ban-giao` (mỗi phiên một khối, không đè khi mở 2–3 phiên song song), `tien-do`, `quyet-dinh`, `bai-hoc`, `kiem-tra`, `tai-lieu/`, `san-pham/`, `.tro-ly/` (trạng thái, lịch sử phiên, dấu vết khi nén). Tự chuyển dự án v0.1 (hỏi trước, giữ file cũ).
 - **Lưu phiên tự động** cho Claude Code và Codex: hook mở / trước nén / sau nén / đóng phiên. Quên "chốt" → lần sau trợ lý hỏi bù sổ. Nhật ký mỗi phiên một file. Giờ lấy từ máy, không đoán.

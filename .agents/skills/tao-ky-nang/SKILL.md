@@ -26,8 +26,8 @@ Bỏ những câu đã rõ: xem các lần làm trước bằng mô tả trong `
 1. Anh/chị sẽ gọi việc này bằng câu nào? (ví dụ "làm báo giá cho …")
 2. Đầu vào là gì? (email, file, số liệu dán vào…)
 3. Các bước anh/chị thường làm, theo thứ tự?
-4. Kết quả trông thế nào? **Có file mẫu, bảng giá, bản làm cũ thì gửi em**, em cất vào kỹ năng để lần sau dùng luôn.
-5. Làm sao biết kết quả **đạt**? Lỗi hay gặp là gì?
+4. Kết quả trông thế nào? Gồm những mục nào, theo thứ tự nào, gửi cho ai? **Có file mẫu, bảng giá, bản làm cũ thì gửi em**, em cất vào kỹ năng để lần sau dùng luôn.
+5. Làm sao biết kết quả **đạt**? Ai duyệt? Lỗi hay gặp là gì?
 
 ## 4. Tạo thư mục và viết `SKILL.md`
 1. `bash scripts/ky-nang.sh tao <loai-viec> [mẫu]`: tạo `cua-toi/ky-nang/<loai-viec>/SKILL.md` từ mẫu.
