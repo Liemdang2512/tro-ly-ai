@@ -24,7 +24,7 @@ chmod +x "$DEST/cai-dat/them-tu-hoc.sh"
 
 echo "MOCHA: cập nhật $doi file huấn luyện."
 [ -d "$BK" ] && echo "MOCHA: bản cũ đã sao lưu ở $BK"
-bash "$DEST/cai-dat/them-tu-hoc.sh" | grep -v '^✓' || true
+bash "$DEST/cai-dat/them-tu-hoc.sh" | grep -v '^✓\|^Xong\. Đóng cửa sổ' || true
 
 # Lịch báo cáo 17:47 / thứ Hai 08:33 (tu-hoc.md vòng 7): bot khởi động kèm lời nhắn "đặt lịch" + mã nhóm.
 # chay.sh nằm trên từng máy (không trong repo) → sửa đúng dòng exec, sao lưu trước, chạy lại không sửa lần 2.
@@ -43,6 +43,23 @@ moi = ('GID="$(sed -n \'s/^GROUP_ID=//p\' "$HERE/nhom.conf" 2>/dev/null | tr -d 
 if s.count(cu) != 1: sys.exit(1)
 open(p, "w", encoding="utf-8").write(s.replace(cu, moi))
 PY
-  then echo "MOCHA: chay.sh — bot khởi động sẽ tự đặt lịch báo cáo (bản cũ: $BK/chay.sh)."
+  then echo "MOCHA: chay.sh — bot khởi động sẽ tự đặt lịch báo cáo (bản cũ: $BK/chay.sh)."; doi=$((doi + 1))
   else echo "MOCHA: ⚠ chay.sh khác mẫu, chưa gắn lịch báo cáo — nhờ người quản trị sửa tay theo tu-hoc.md vòng 7."; fi
 fi
+
+# Có thay đổi → tắt các bot phòng đang chạy rồi mở lại đúng những phòng đó, để bot đọc luật mới.
+# Bot nhận ra qua cờ --channels plugin:telegram và thư mục làm việc nằm trong cua-toi/MOCHA_AI/<phòng>.
+[ "$doi" -gt 0 ] || exit 0
+MOCHA="$(dirname "$DEST")"; mo=(); pids=()
+for pid in $(pgrep -f -- "--channels plugin:telegram" || true); do
+  cwd="$(lsof -a -p "$pid" -d cwd -Fn 2>/dev/null | sed -n 's/^n//p')"
+  case "$cwd" in "$MOCHA"/*) p="${cwd#"$MOCHA"/}"; [ "$p" = "${p%%/*}" ] && { mo+=("$p"); pids+=("$pid"); } ;; esac
+done
+[ ${#mo[@]} -gt 0 ] || { echo "MOCHA: không có bot phòng nào đang chạy — bấm KHOI-DONG-TAT-CA.command khi cần."; exit 0; }
+echo "MOCHA: khởi động lại ${#mo[@]} bot để đọc luật mới: ${mo[*]}"
+kill "${pids[@]}" 2>/dev/null || true
+for _ in 1 2 3 4 5 6 7 8 9 10; do
+  con=0; for pid in "${pids[@]}"; do kill -0 "$pid" 2>/dev/null && con=1; done
+  [ "$con" = 0 ] && break; sleep 1
+done
+bash "$DEST/cai-dat/khoi-dong-tat-ca.sh" "${mo[@]}"

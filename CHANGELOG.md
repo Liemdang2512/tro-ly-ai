@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.5.1 — 2026-10-12
+- `cap-nhat-mocha.sh`: có thay đổi thì tự tắt các bot phòng đang chạy rồi mở lại đúng những phòng đó (không cần đóng cửa sổ trước khi bấm CAP-NHAT). Không có thay đổi thì không khởi động lại.
+
 ## 0.5.0 — 2026-10-12
 - **Agent phòng ban MOCHA:** thêm bộ `mocha/00_CHUNG/lam-viec-voi-sep/` (Sổ tay làm việc với Sếp v2.1): prompt tổng bản đầy đủ (nguyên văn, 148 dòng), prompt rút gọn, dòng thời gian, 33 luật, 26 lỗi, 10 tình huống kiểm thử, mô hình huấn luyện, dữ kiện nghiệp vụ, nguồn chuẩn, 12 quyết định đã chốt. `them-tu-hoc.sh` chép thư mục này vào `.luat-chung/` của mọi phòng và gắn khối `<!-- prompt-tong -->` vào `AGENTS.md` (một lần, sao lưu trước) để prompt tổng tự nạp mỗi phiên, phòng cũ lẫn phòng mới. Prompt tổng xếp ngay sau mục An toàn, trên luật riêng của phòng.
 - Kiểm 2 lớp: tự kiểm chéo A–E của prompt tổng **cộng thêm** AI thứ hai (`kiem-chung.md` bước 1, `tu-hoc.md` vòng 6).

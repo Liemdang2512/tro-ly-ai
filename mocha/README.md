@@ -15,5 +15,5 @@ Phần **chung** để agent các phòng tự học và tự soạn câu hỏi n
 | `00_CHUNG/cai-dat/them-tu-hoc.sh` | Bật/cập nhật luật cho mọi phòng (chép vào `.luat-chung/` của phòng, chỉ thêm) |
 | `cap-nhat-mocha.sh` | Chép các file trên vào `cua-toi/MOCHA_AI/00_CHUNG/` (sao lưu bản cũ), chạy `them-tu-hoc.sh`, và gắn lời nhắn khởi động vào `chay.sh` để bot tự đặt lịch báo cáo 17:47 / thứ Hai 08:33 (`tu-hoc.md` vòng 7) |
 
-**Luồng cập nhật:** sửa file ở đây → đưa lên `main` → máy dùng bấm `CAP-NHAT.command` → tự chạy `cap-nhat-mocha.sh` → đóng cửa sổ bot, bấm `KHOI-DONG-TAT-CA.command`.
+**Luồng cập nhật:** sửa file ở đây → đưa lên `main` → máy dùng bấm `CAP-NHAT.command` (không cần tắt bot) → tự chạy `cap-nhat-mocha.sh` → có thay đổi thì tự tắt và mở lại các bot phòng đang chạy. Bot nào đang tắt thì vẫn tắt; mở bằng `KHOI-DONG-TAT-CA.command` khi cần.
 Đây là **nguồn gốc duy nhất** của các file trên; bản trong `cua-toi/MOCHA_AI/00_CHUNG/` là bản chép, sửa tay ở đó sẽ bị thay (có sao lưu trong `00_CHUNG/sao-luu/`).
