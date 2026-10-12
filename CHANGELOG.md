@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.0 — 2026-10-12
+- **Agent phòng ban MOCHA:** thêm bộ `mocha/00_CHUNG/lam-viec-voi-sep/` (Sổ tay làm việc với Sếp v2.1): prompt tổng bản đầy đủ (nguyên văn, 148 dòng), prompt rút gọn, dòng thời gian, 33 luật, 26 lỗi, 10 tình huống kiểm thử, mô hình huấn luyện, nguồn chuẩn, 12 quyết định đã chốt. `them-tu-hoc.sh` chép thư mục này vào `.luat-chung/` của mọi phòng và gắn khối `<!-- prompt-tong -->` vào `AGENTS.md` (một lần, sao lưu trước) để prompt tổng tự nạp mỗi phiên, phòng cũ lẫn phòng mới. Prompt tổng xếp ngay sau mục An toàn, trên luật riêng của phòng.
+- `17_DU_KIEN_NGHIEP_VU.md` (có ngưỡng doanh thu) không lên repo; chép tay vào `cua-toi/MOCHA_AI/00_CHUNG/lam-viec-voi-sep/` trên máy chạy agent.
+- Chưa có: lịch báo cáo 17:47 và rà tuần thứ Hai 08:33.
+
 ## 0.4.0 — 2026-10-12
 - **Trợ lý chung:** thêm kỹ năng `kiem-chung` (AI thứ hai kiểm chéo trước khi giao; quy tắc kiểm riêng ở `cua-toi/quy-tac-kiem-chung.md`, ghi qua `scripts/ghi-them.sh`). `AGENTS.md` yêu cầu chạy kiểm chứng cho file/báo cáo có số liệu và đọc bối cảnh công ty khi soạn nội dung ra ngoài. `thiet-lap` có nhóm câu tùy chọn về bối cảnh doanh nghiệp. `tao-ky-nang` hỏi thêm khuôn đầu ra và người duyệt. Thêm 3 mẫu trong `mau/cua-toi/`.
 - **Agent phòng ban MOCHA:** `mocha/00_CHUNG/kiem-chung.md` (cùng câu lệnh hệ thống) và vòng 6 trong `tu-hoc.md`. Ngân hàng câu hỏi thêm khối M (mô hình kinh doanh, M1–M10), P (vị trí phòng), O1–O8 (phiếu đầu ra, thay D16–D17). `setup-phong.md`: Bước 0 đọc mô hình kinh doanh, khuôn 12 câu riêng phòng, kiểm chéo bộ câu, Bước 6 chạy thử có kiểm chứng. 2 file mẫu hồ sơ công ty (bản thật ở `cua-toi`, không lên repo).

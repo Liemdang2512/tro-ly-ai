@@ -11,6 +11,7 @@ Phần **chung** để agent các phòng tự học và tự soạn câu hỏi n
 | `00_CHUNG/khung-theo-phong.md` | Khung chuẩn MOCHA V3 rút theo từng phòng |
 | `00_CHUNG/kiem-chung.md` | Kiểm chứng độc lập: AI thứ hai kiểm file/nghiên cứu trước khi giao (câu lệnh hệ thống, cách gọi, cấu trúc báo cáo kiểm) |
 | `00_CHUNG/mau-mo-hinh-kinh-doanh.md`, `mau-phong-cach-thuong-hieu.md` | Bản mẫu hồ sơ công ty (M1–M10). Bản thật ở `cua-toi/MOCHA_AI/00_CHUNG/`, không lên repo |
+| `00_CHUNG/lam-viec-voi-sep/` | Sổ tay làm việc với Sếp v2.1: prompt tổng bản đầy đủ (tự nạp vào mọi phòng, luật nền bắt buộc), sổ luật, nhật ký lỗi, kiểm thử, quyết định đã chốt. Đọc `00_MUC_LUC.md` trước. File 17 chỉ ở máy, không lên repo |
 | `00_CHUNG/cai-dat/them-tu-hoc.sh` | Bật/cập nhật luật cho mọi phòng (chép vào `.luat-chung/` của phòng, chỉ thêm) |
 | `cap-nhat-mocha.sh` | Chép các file trên vào `cua-toi/MOCHA_AI/00_CHUNG/` (sao lưu bản cũ) rồi chạy `them-tu-hoc.sh` |
 
