@@ -6,10 +6,10 @@
 1. `14_PROMPT_TONG.md` (bản đầy đủ, nguyên văn) được **tự nạp mỗi phiên** vào mọi phòng qua `AGENTS.md` của phòng (khối `<!-- prompt-tong -->` do `them-tu-hoc.sh` thêm).
 2. Thứ tự ưu tiên khi trái nhau: **mục An toàn** của luật chung → **Prompt tổng v2.1** → luật riêng của phòng → các luật chung khác (`tu-hoc.md`, `setup-phong.md`…). Luật riêng của phòng chỉ được cụ thể hoá prompt tổng, không được làm ngược. Thấy trái nhau thì theo prompt tổng và báo Sếp 1 dòng.
 3. Các file prompt nhắc tới (`16_SO_TAY_LUAT`, `17_DU_KIEN_NGHIEP_VU`, `18_NHAT_KY_LOI`, `19_KIEM_THU`, `20_MO_HINH_HUAN_LUYEN`, `21_NGUON_CHUAN`, `22_QUYET_DINH_DA_CHOT`) nằm cùng thư mục này: trong phòng là `.luat-chung/lam-viec-voi-sep/`. Chỉ đọc khi cần, không đọc hết mỗi phiên.
-4. Bước 5 "Tự kiểm chéo" của prompt **cộng thêm** kiểm chứng độc lập (`.luat-chung/kiem-chung.md`), không thay thế nó: tự kiểm theo mục A–E xong, file / nghiên cứu có số liệu, luật, giá thì vẫn gọi AI thứ hai kiểm.
+4. Bước 5 "Tự kiểm chéo" của prompt **cộng thêm** kiểm chứng độc lập (`.luat-chung/kiem-chung.md` bước 1–2, `tu-hoc.md` vòng 6), không thay thế nó: tự kiểm theo mục A–E xong, file / nghiên cứu có số liệu, luật, giá thì vẫn gọi AI thứ hai kiểm. Thiếu một trong hai thì chưa giao.
 5. "Gửi link duyệt" khi làm qua Telegram: gửi **1 bản duyệt** (1 file hoặc 1 link), đầu bản ghi khác gì bản cũ · kết quả kiểm · điểm cần Sếp chốt. Sếp OK mới xuất bản cuối hoặc ghép vào file tổng.
-6. `17_DU_KIEN_NGHIEP_VU.md` có ngưỡng doanh thu nên **không đưa lên repo**. Người quản trị chép tay vào `cua-toi/MOCHA_AI/00_CHUNG/lam-viec-voi-sep/` trên máy chạy agent; có file thì lần cập nhật sau tự chép vào mọi phòng. Chưa có thì ghi `[Cần hỏi]`, không đoán số.
-7. Báo cáo ngày 17:47 và rà tuần thứ Hai 08:33 cần người quản trị cài lịch chạy. Chưa cài thì agent không tự gửi, chỉ báo khi Sếp nhắn.
+6. `17_DU_KIEN_NGHIEP_VU.md`: mọi ngưỡng tiền là [Giả định], dùng cho demo, không đưa ra ngoài công ty.
+7. Báo cáo ngày 17:47 và rà tuần thứ Hai 08:33: lịch máy tự chạy `cai-dat/bao-cao-dinh-ky.sh` (cài khi bấm CAP-NHAT trên máy có bot). Lịch mở một phiên riêng, đọc `so-viec.md`, `nhat-ky/`, `bao-cao/` của phòng, lưu `bao-cao/<ngày>_bao-cao-ngay.md` hoặc `<ngày>_ra-tuan.md` rồi bot gửi vào topic của phòng. Phiên đang chat với Sếp không tự gửi báo cáo này; Sếp hỏi lại thì đọc file đã lưu. Vì vậy **ghi `so-viec.md` đủ và đúng ngày** — báo cáo chỉ dựa vào đó.
 8. Sửa prompt: sửa file ở `mocha/00_CHUNG/lam-viec-voi-sep/` trong repo theo vòng 7 bước (`20_MO_HINH_HUAN_LUYEN.md`), tăng phiên bản, ghi khác gì → Sếp duyệt → đưa lên `main` → máy dùng bấm CAP-NHAT. Không sửa bản chép trong `.luat-chung/`.
 
 ## Danh sách file
@@ -19,7 +19,7 @@
 | `14b_PROMPT_RUT_GON.md` | Prompt rút gọn v2.1 (29 dòng) — dùng khi dán vào trợ lý khác | Có |
 | `15_DONG_THOI_GIAN.md` | 8 chặng 02/10 → 12/10: Sếp cần gì, câu then chốt, kết quả, bài học | Có |
 | `16_SO_TAY_LUAT.md` | 33 luật L01–L33, câu Sếp nói, số tin, số lần nhắc | Có |
-| `17_DU_KIEN_NGHIEP_VU.md` | 21 thông số vận hành Sếp đã cho | **Không** — chỉ trên máy |
+| `17_DU_KIEN_NGHIEP_VU.md` | 21 thông số vận hành Sếp đã cho | Có |
 | `18_NHAT_KY_LOI.md` | 26 lỗi E01–E26: ai phát hiện, gốc rễ, luật sửa | Có |
 | `19_KIEM_THU.md` | 10 tình huống T01–T10, đáp án đúng, kết quả lần đầu | Có |
 | `20_MO_HINH_HUAN_LUYEN.md` | Vòng 7 bước + bảng điểm 6 chỉ số | Có |

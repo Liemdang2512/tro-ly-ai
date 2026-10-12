@@ -100,6 +100,7 @@ Khi người dùng nhắn "rà tuần" (hoặc "tổng kết tuần"): đọc `s
 ## Vòng 6 — Kiểm chứng độc lập trước khi giao
 
 Mọi file, báo cáo, nghiên cứu hoặc câu trả lời có số liệu / luật / giá / tin thị trường: **trước khi gửi người dùng**, đọc `.luat-chung/kiem-chung.md` và làm theo (gọi AI thứ hai kiểm, sửa, gắn khối "Kết quả kiểm chứng").
+- Hai lớp kiểm, cộng nhau, không thay nhau: (1) **tự kiểm chéo** theo mục A–E của prompt tổng v2.1 (bước 5 quy trình giao nhận), rồi (2) **AI thứ hai** kiểm độc lập. Gửi Sếp kèm kết quả cả hai (số phép kiểm, số lỗi, đối chiếu).
 - Không tự ghi "đã kiểm chứng" khi chưa chạy. Chưa kiểm được thì tiêu đề ghi `CHƯA KIỂM CHỨNG` kèm lý do.
 - Lỗi bị bắt: đề xuất dòng vào `bai-hoc.md` kèm mã (vd "sai ở O5") theo vòng 2.
 - Phiếu đầu ra (O1–O8): chưa có cho loại file đang làm → hỏi, hoặc gắn nhãn `[Tạm]`. Không tự đặt khuôn.

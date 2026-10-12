@@ -1,9 +1,9 @@
 # Changelog
 
 ## 0.5.0 — 2026-10-12
-- **Agent phòng ban MOCHA:** thêm bộ `mocha/00_CHUNG/lam-viec-voi-sep/` (Sổ tay làm việc với Sếp v2.1): prompt tổng bản đầy đủ (nguyên văn, 148 dòng), prompt rút gọn, dòng thời gian, 33 luật, 26 lỗi, 10 tình huống kiểm thử, mô hình huấn luyện, nguồn chuẩn, 12 quyết định đã chốt. `them-tu-hoc.sh` chép thư mục này vào `.luat-chung/` của mọi phòng và gắn khối `<!-- prompt-tong -->` vào `AGENTS.md` (một lần, sao lưu trước) để prompt tổng tự nạp mỗi phiên, phòng cũ lẫn phòng mới. Prompt tổng xếp ngay sau mục An toàn, trên luật riêng của phòng.
-- `17_DU_KIEN_NGHIEP_VU.md` (có ngưỡng doanh thu) không lên repo; chép tay vào `cua-toi/MOCHA_AI/00_CHUNG/lam-viec-voi-sep/` trên máy chạy agent.
-- Chưa có: lịch báo cáo 17:47 và rà tuần thứ Hai 08:33.
+- **Agent phòng ban MOCHA:** thêm bộ `mocha/00_CHUNG/lam-viec-voi-sep/` (Sổ tay làm việc với Sếp v2.1): prompt tổng bản đầy đủ (nguyên văn, 148 dòng), prompt rút gọn, dòng thời gian, 33 luật, 26 lỗi, 10 tình huống kiểm thử, mô hình huấn luyện, dữ kiện nghiệp vụ, nguồn chuẩn, 12 quyết định đã chốt. `them-tu-hoc.sh` chép thư mục này vào `.luat-chung/` của mọi phòng và gắn khối `<!-- prompt-tong -->` vào `AGENTS.md` (một lần, sao lưu trước) để prompt tổng tự nạp mỗi phiên, phòng cũ lẫn phòng mới. Prompt tổng xếp ngay sau mục An toàn, trên luật riêng của phòng.
+- Kiểm 2 lớp: tự kiểm chéo A–E của prompt tổng **cộng thêm** AI thứ hai (`kiem-chung.md` bước 1, `tu-hoc.md` vòng 6).
+- **Lịch báo cáo:** `cai-dat/bao-cao-dinh-ky.sh` (mọi phòng có bot: báo cáo cuối ngày 17:47, rà tuần thứ Hai 08:33, gửi vào topic của phòng; phiên soạn riêng chỉ được đọc file, tắt plugin Telegram để không giành tin của bot đang chạy). `cai-dat/cai-lich-bao-cao.sh bat|tat|xem`; CAP-NHAT tự cài trên máy có bot phòng (trừ khi đã `tat`).
 
 ## 0.4.0 — 2026-10-12
 - **Trợ lý chung:** thêm kỹ năng `kiem-chung` (AI thứ hai kiểm chéo trước khi giao; quy tắc kiểm riêng ở `cua-toi/quy-tac-kiem-chung.md`, ghi qua `scripts/ghi-them.sh`). `AGENTS.md` yêu cầu chạy kiểm chứng cho file/báo cáo có số liệu và đọc bối cảnh công ty khi soạn nội dung ra ngoài. `thiet-lap` có nhóm câu tùy chọn về bối cảnh doanh nghiệp. `tao-ky-nang` hỏi thêm khuôn đầu ra và người duyệt. Thêm 3 mẫu trong `mau/cua-toi/`.

@@ -20,8 +20,10 @@ while IFS= read -r f; do
     mkdir -p "$DEST/$(dirname "$rel")" && cp "$f" "$DEST/$rel"; doi=$((doi + 1))
   fi
 done < <(find "$SRC" -type f ! -name .DS_Store)
-chmod +x "$DEST/cai-dat/them-tu-hoc.sh"
+chmod +x "$DEST/cai-dat/them-tu-hoc.sh" "$DEST/cai-dat/bao-cao-dinh-ky.sh" "$DEST/cai-dat/cai-lich-bao-cao.sh"
 
 echo "MOCHA: cập nhật $doi file huấn luyện."
 [ -d "$BK" ] && echo "MOCHA: bản cũ đã sao lưu ở $BK"
 bash "$DEST/cai-dat/them-tu-hoc.sh" | grep -v '^✓' || true
+# lịch báo cáo 17:47 / thứ Hai 08:33: tự cài trên máy có bot phòng (tắt: cai-dat/cai-lich-bao-cao.sh tat)
+bash "$DEST/cai-dat/cai-lich-bao-cao.sh" tu-dong || echo "MOCHA: chưa cài được lịch báo cáo (xem 00_CHUNG/nhat-ky-lich/)."
