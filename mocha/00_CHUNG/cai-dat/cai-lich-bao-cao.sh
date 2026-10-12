@@ -16,13 +16,13 @@ case "${1:-xem}" in
   bat)
     CLAUDE_BIN="$(command -v claude || true)"
     [ -n "$CLAUDE_BIN" ] || { echo "Không thấy lệnh claude trên máy — chưa cài lịch."; exit 1; }
-    case "$HERE" in "$HOME"/Desktop/*|"$HOME"/Documents/*|"$HOME"/Downloads/*|*"Mobile Documents"*)
-      echo "⚠ Thư mục MOCHA nằm trong Desktop/Documents/Downloads/iCloud: macOS có thể chặn lịch chạy nền đọc file ở đây."
-      echo "  Nếu báo cáo không tới, xem nhật ký trong 00_CHUNG/nhat-ky-lich/ (lỗi 'Operation not permitted')." ;;
-    esac
-    rm -f "$TAT"; mkdir -p "$LA" "$HERE/../nhat-ky-lich"
+    rm -f "$TAT"; mkdir -p "$LA" "$HERE/../nhat-ky-lich" "$HERE/chay-lich"
     for loai in ngay tuan; do
       nhan="vn.mocha.bao-cao-$loai"
+      # Lịch mở script qua app Terminal (như bot): macOS chặn tác vụ nền đọc Desktop/Documents, Terminal thì đã có quyền.
+      lenh="$HERE/chay-lich/bao-cao-$loai.command"
+      printf '#!/bin/bash\nexport PATH="%s:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin"\nbash "%s/bao-cao-dinh-ky.sh" %s\n' "$(dirname "$CLAUDE_BIN")" "$HERE" "$loai" > "$lenh"
+      chmod +x "$lenh"
       if [ $loai = ngay ]; then gio="<key>Hour</key><integer>17</integer><key>Minute</key><integer>47</integer>"
       else gio="<key>Weekday</key><integer>1</integer><key>Hour</key><integer>8</integer><key>Minute</key><integer>33</integer>"; fi
       go "$nhan"
@@ -31,9 +31,8 @@ case "${1:-xem}" in
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
   <key>Label</key><string>$nhan</string>
-  <key>ProgramArguments</key><array><string>/bin/bash</string><string>$HERE/bao-cao-dinh-ky.sh</string><string>$loai</string></array>
+  <key>ProgramArguments</key><array><string>/usr/bin/open</string><string>-g</string><string>-a</string><string>Terminal</string><string>$lenh</string></array>
   <key>StartCalendarInterval</key><dict>$gio</dict>
-  <key>EnvironmentVariables</key><dict><key>PATH</key><string>$(dirname "$CLAUDE_BIN"):/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string><key>LANG</key><string>en_US.UTF-8</string></dict>
   <key>StandardOutPath</key><string>$HERE/../nhat-ky-lich/launchd.log</string>
   <key>StandardErrorPath</key><string>$HERE/../nhat-ky-lich/launchd.log</string>
 </dict></plist>
