@@ -9,6 +9,8 @@ Phần **chung** để agent các phòng tự học và tự soạn câu hỏi n
 | `00_CHUNG/cau-hoi-nhan-viec.csv` | Ngân hàng câu hỏi chung (+ câu riêng mẫu dự phòng) |
 | `00_CHUNG/phieu.py` | Tạo / đọc phiếu Excel, liệt kê câu của phòng (chỉ cần Python có sẵn) |
 | `00_CHUNG/khung-theo-phong.md` | Khung chuẩn MOCHA V3 rút theo từng phòng |
+| `00_CHUNG/kiem-chung.md` | Kiểm chứng độc lập: AI thứ hai kiểm file/nghiên cứu trước khi giao (câu lệnh hệ thống, cách gọi, cấu trúc báo cáo kiểm) |
+| `00_CHUNG/mau-mo-hinh-kinh-doanh.md`, `mau-phong-cach-thuong-hieu.md` | Bản mẫu hồ sơ công ty (M1–M10). Bản thật ở `cua-toi/MOCHA_AI/00_CHUNG/`, không lên repo |
 | `00_CHUNG/cai-dat/them-tu-hoc.sh` | Bật/cập nhật luật cho mọi phòng (chép vào `.luat-chung/` của phòng, chỉ thêm) |
 | `cap-nhat-mocha.sh` | Chép các file trên vào `cua-toi/MOCHA_AI/00_CHUNG/` (sao lưu bản cũ) rồi chạy `them-tu-hoc.sh` |
 

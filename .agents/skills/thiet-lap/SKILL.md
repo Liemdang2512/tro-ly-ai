@@ -48,6 +48,14 @@ Người dùng **không rành kỹ thuật**. Giữ giọng thân thiện, câu 
 **F. Công cụ**
 15. Anh/chị đang dùng: Gmail/Outlook? Lịch Google/Outlook? Lưu tài liệu ở Google Drive/OneDrive/máy tính? Nhắn việc qua Zalo/Telegram/Slack? (chỉ để em biết, không cần kết nối ngay)
 
+**G. Bối cảnh doanh nghiệp (TÙY CHỌN — chỉ hỏi nếu người dùng là chủ/quản lý hoặc làm việc cần hiểu công ty; hỏi trước: "Anh/chị có muốn em hiểu thêm cách công ty kinh doanh để làm đúng ngữ cảnh không? Khoảng 5 phút." Nói không thì bỏ qua cả nhóm)**
+16. Công ty bán gì, cho ai? Tách theo từng nhãn / kênh (nếu có).
+17. Khách chính biết đến công ty qua kênh nào? Mỗi kênh chiếm khoảng bao nhiêu % doanh thu?
+18. Tiền ra vào đâu nhiều nhất? Khâu nào tự làm, khâu nào thuê ngoài?
+19. Có mùa cao điểm, hạn cố định hoặc quy định đặc thù ngành em phải biết không?
+20. Lãi đến từ đâu, 3–5 chỉ số sống còn là gì? Mục tiêu 12 tháng tới?
+21. Giọng văn thương hiệu thế nào? Từ nào nên dùng, từ/câu nào cấm? Có bài mẫu đúng giọng không?
+
 ## Xác nhận
 
 Tóm tắt lại **tối đa 12 dòng** bằng lời thường (không nhắc tên file): gọi là gì, làm gì, gói nghề đã chọn, 3 việc lặp lại, cách trả lời, những gì không ghi nhớ, việc phải hỏi trước, các dự án. Hỏi: *"Em hiểu vậy đúng chưa? Có gì cần sửa không?"* — sửa tới khi người dùng đồng ý.
@@ -65,7 +73,8 @@ Dùng mẫu trong `mau/cua-toi/`, thay các chỗ `{{…}}` bằng câu trả l�
 4. `cua-toi/quyet-dinh.md`, `cua-toi/bai-hoc.md` ← mẫu tương ứng (để trống bảng).
 5. Tạo thư mục `cua-toi/nhat-ky/`, `cua-toi/tai-lieu/`, `cua-toi/ky-nang/` (mỗi thư mục có file `.gitkeep`).
 6. Ghi `cua-toi/nhat-ky/<hôm nay>.md`: "Thiết lập lần đầu."
-7. Nếu `cua-toi/` là git repo (có `cua-toi/.git`): `git -C cua-toi add -A && git -C cua-toi commit -m "thiet-lap: ho so ban dau"`.
+7. Nếu người dùng đã trả lời nhóm G: `cua-toi/mo-hinh-kinh-doanh.md` ← `mau/cua-toi/mo-hinh-kinh-doanh.md` (câu 16–20) và `cua-toi/phong-cach-thuong-hieu.md` ← `mau/cua-toi/phong-cach-thuong-hieu.md` (câu 21). Chưa biết thì để `[chưa rõ]`. Luôn tạo `cua-toi/quy-tac-kiem-chung.md` ← `mau/cua-toi/quy-tac-kiem-chung.md` (bảng trống).
+8. Nếu `cua-toi/` là git repo (có `cua-toi/.git`): `git -C cua-toi add -A && git -C cua-toi commit -m "thiet-lap: ho so ban dau"`.
 
 ## Kết thúc
 

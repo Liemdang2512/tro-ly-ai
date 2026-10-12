@@ -9,8 +9,8 @@ description: Đóng gói một việc lặp lại của người dùng thành k�
    1. Việc này tên là gì, anh/chị sẽ gọi nó bằng câu nào? (ví dụ "làm báo cáo tuần")
    2. Đầu vào là gì? (email, file, số liệu dán vào, thông tin cần hỏi…)
    3. Các bước anh/chị thường làm, theo thứ tự?
-   4. Kết quả trông thế nào? (có mẫu cũ thì dán vào — tốt nhất)
-   5. Làm sao biết kết quả **đạt**? Những lỗi hay gặp?
+   4. Kết quả trông thế nào? Gồm những mục nào, theo thứ tự nào, gửi cho ai? (có mẫu cũ thì dán vào — tốt nhất)
+   5. Làm sao biết kết quả **đạt**? Ai duyệt? Những lỗi hay gặp?
 2. **Viết file** `cua-toi/ky-nang/<ten-khong-dau-gach-noi>.md` theo khuôn:
    ```markdown
    # Kỹ năng: <Tên>
@@ -21,11 +21,16 @@ description: Đóng gói một việc lặp lại của người dùng thành k�
    1. …
 
    ## Mẫu kết quả
-   …
+   - Gửi cho: … để quyết việc gì
+   - Dạng + tên file: …
+   - Các mục, đúng thứ tự: 1. … 2. …
+   - Đạt khi: … · Người duyệt: …
+   - Ví dụ mẫu tốt: …
 
    ## Kiểm tra trước khi giao
    - [ ] …
    - [ ] Số liệu có nguồn, không bịa
+   - [ ] Đã chạy kiểm chứng (`.agents/skills/kiem-chung/SKILL.md`)
    ```
 3. **Đăng ký** vào bảng Kỹ năng riêng trong `cua-toi/AGENTS.md`: `| "<câu gọi>" | cua-toi/ky-nang/<ten>.md |`.
 4. **Chạy thử ngay** với dữ liệu thật (hoặc ví dụ người dùng đưa). Người dùng góp ý → sửa file kỹ năng.

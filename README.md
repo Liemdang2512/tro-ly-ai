@@ -54,6 +54,7 @@ Cứ nói chuyện bình thường. Có **3 câu đặc biệt**:
 
 Thêm vài câu hữu ích:
 - **"tạo kỹ năng [tên việc]"** — dạy trợ lý một việc hay lặp lại, lần sau chỉ cần gọi tên.
+- **"kiểm chứng [file]"** / **"thêm quy tắc kiểm chứng: …"** — nhờ một AI khác kiểm chéo số liệu, luật, giá trước khi dùng; thêm quy tắc kiểm riêng của bạn.
 - **"dọn dẹp"** — mỗi tuần một lần, trợ lý rà lại sổ, gộp trùng, bỏ cái cũ.
 - **"thiết lập lại"** — đổi thông tin cá nhân, cách làm việc.
 

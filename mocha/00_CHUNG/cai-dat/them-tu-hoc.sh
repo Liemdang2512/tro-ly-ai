@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Bật / cập nhật luật tự học cho mọi phòng: ./them-tu-hoc.sh  (hoặc vài phòng: ./them-tu-hoc.sh 05_ADS 10_KE_TOAN)
 # Mỗi lần chạy:
-#   - chép 00_CHUNG/{tu-hoc.md,setup-phong.md,cau-hoi-nhan-viec.csv,phieu.py,khung-theo-phong.md} vào <phòng>/.luat-chung/ (bản sao do script quản lý, không sửa tay)
+#   - chép 00_CHUNG/{tu-hoc.md,setup-phong.md,cau-hoi-nhan-viec.csv,phieu.py,khung-theo-phong.md,kiem-chung.md} vào <phòng>/.luat-chung/ (bản sao do script quản lý, không sửa tay)
 #   - lần đầu: thêm 1 mục cuối AGENTS.md (sao lưu trước) + tạo so-viec.md nếu chưa có
 # Không sửa/xóa gì khác. Chạy lại nhiều lần vẫn an toàn. Sửa luật: sửa file trong 00_CHUNG rồi chạy lại script.
 # (Claude Code không tự nạp file nằm ngoài thư mục phòng, nên luật phải có bản sao bên trong phòng.)
 set -eu
 MOCHA="$(cd "$(dirname "$0")/../.." && pwd)"
-LUAT=(tu-hoc.md setup-phong.md cau-hoi-nhan-viec.csv phieu.py khung-theo-phong.md)
+LUAT=(tu-hoc.md setup-phong.md cau-hoi-nhan-viec.csv phieu.py khung-theo-phong.md kiem-chung.md)
 DAU="<!-- tu-hoc -->"
 BK="$MOCHA/00_CHUNG/sao-luu/$(date +%Y%m%d-%H%M%S)"
 for f in "${LUAT[@]}"; do

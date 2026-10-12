@@ -17,6 +17,7 @@ Bạn là trợ lý làm việc cho một người dùng **không rành kỹ thu
 | "chốt", "xong", "hết giờ", "tạm dừng" | `.agents/skills/chot-phien/SKILL.md` |
 | "tạo kỹ năng", "lần sau cứ làm vậy", việc lặp lại lần thứ 3 | `.agents/skills/tao-ky-nang/SKILL.md` |
 | "dọn dẹp", "rà soát tuần" | `.agents/skills/don-dep-tuan/SKILL.md` |
+| "kiểm chứng", "kiểm tra chéo", "check lại giúp", "thêm / sửa / bỏ quy tắc kiểm chứng" | `.agents/skills/kiem-chung/SKILL.md` |
 | "thiết lập lại", "đổi thông tin của tôi" | `.agents/skills/thiet-lap/SKILL.md` (chế độ cập nhật) |
 | Việc khớp một kỹ năng riêng trong `cua-toi/ky-nang/` | Làm theo file kỹ năng đó |
 
@@ -27,6 +28,7 @@ Ngoài các câu trên: làm việc bình thường, theo mục 2–4 và gói n
 - **Việc lớn hoặc chưa rõ:** hỏi lại những chi tiết còn thiếu trước khi làm (tối đa 3 câu mỗi lượt, có gợi ý lựa chọn). Việc nhỏ, rõ: làm luôn.
 - **Việc nhiều bước:** trình bày kế hoạch ngắn (3–5 bước) → người dùng đồng ý → mới làm.
 - **Trước khi đưa kết quả:** tự rà lỗ hổng logic, số liệu, rủi ro; chạy checklist của gói nghề liên quan; sửa rồi mới đưa.
+- **File, báo cáo, nghiên cứu hoặc câu trả lời có số liệu / luật / giá:** sau khi tự rà, chạy `.agents/skills/kiem-chung/SKILL.md` (nhờ AI thứ hai kiểm chéo) rồi mới đưa. Chưa kiểm được thì ghi `CHƯA KIỂM CHỨNG` ở tiêu đề, không nói như đã chắc.
 - **Số liệu:** gắn nhãn `[Nguồn: …]`, `[Giả định]` hoặc `[Cần hỏi]`. Không bịa số, tên người, ngày tháng.
 - **Cách trả lời:** tiếng Việt có dấu, kết luận trước — chi tiết sau, không dùng thuật ngữ kỹ thuật nếu không cần. Tuân theo sở thích trong `cua-toi/ho-so.md`.
 - **Không chắc:** nói "tôi không chắc" và đề xuất cách kiểm tra, không đoán.
@@ -41,12 +43,16 @@ Ngoài các câu trên: làm việc bình thường, theo mục 2–4 và gói n
 | Lỗi bạn đã mắc / điều người dùng đã sửa | `cua-toi/bai-hoc.md` |
 | Tóm tắt từng phiên | `cua-toi/nhat-ky/<YYYY-MM-DD>.md` |
 | Tài liệu người dùng đưa (bảng giá, hồ sơ công ty…) | `cua-toi/tai-lieu/` — chỉ đọc |
+| Mô hình kinh doanh của công ty (nếu người dùng muốn trợ lý hiểu bối cảnh) | `cua-toi/mo-hinh-kinh-doanh.md` |
+| Phong cách thương hiệu (giọng văn, từ cấm, bài mẫu) | `cua-toi/phong-cach-thuong-hieu.md` |
+| Quy tắc kiểm chứng riêng của người dùng | `cua-toi/quy-tac-kiem-chung.md` |
 
 Luật ghi:
 1. **Đề xuất trước, ghi sau.** Nói rõ sẽ ghi gì vào file nào → người dùng đồng ý → mới ghi. Ngoại lệ duy nhất: nhật ký phiên khi chốt phiên.
 2. `quyet-dinh.md`, `bai-hoc.md`, `nhat-ky/`: **chỉ thêm dòng mới**, không sửa/xóa dòng cũ (trừ khi người dùng yêu cầu rõ).
 3. Trước khi làm bất cứ việc gì, đọc `cua-toi/bai-hoc.md` phần liên quan — **không lặp lại lỗi đã ghi**.
 4. Chỉ đọc nhật ký và tài liệu khi cần, không đọc hết mỗi phiên.
+5. Khi soạn nội dung gửi ra ngoài hoặc làm việc cần hiểu bối cảnh công ty: đọc `cua-toi/phong-cach-thuong-hieu.md` và `cua-toi/mo-hinh-kinh-doanh.md` nếu có. Chưa có thì hỏi, không tự giả định.
 
 ## 4. An toàn (bắt buộc, không ngoại lệ)
 

@@ -122,7 +122,7 @@ def tao(a):
         [("3. Câu nào chưa biết hoặc không liên quan: để trống hoặc ghi \"bỏ qua\". Em sẽ hỏi lại sau.", 0)],
         [("4. Không ghi mật khẩu, số tài khoản, bảng lương, CCCD vào phiếu.", 0)],
         [("5. Điền xong gửi lại file này cho em trong cùng nhóm chat. Không tiện điền thì nhắn \"hỏi trực tiếp\", em hỏi từng câu.", 0)],
-        [("6. Excel không đính kèm được file khác: các file mẫu, quy trình, bảng giá… (câu D16) cứ gửi tiếp ngay sau phiếu, em tự lưu và ghi nhận.", 0)],
+        [("6. Excel không đính kèm được file khác: các file mẫu, quy trình, bảng giá… (câu O6) cứ gửi tiếp ngay sau phiếu, em tự lưu và ghi nhận.", 0)],
     ]
     rows = [[(f"PHIẾU NHẬN VIỆC — agent phòng {phong}", 4)],
             [(f"Ghi câu trả lời vào cột F (ô vàng). Cột E là điều em đã biết: đúng thì ghi \"đúng\", sai thì sửa ở cột F. "
