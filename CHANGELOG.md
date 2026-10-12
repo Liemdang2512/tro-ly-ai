@@ -1,12 +1,20 @@
 # Changelog
 
-## 0.3.0 — 2026-10-12
-- **Trợ lý chung (thư mục gốc):** thêm kỹ năng `kiem-chung` (AI thứ hai kiểm chéo trước khi giao, quy tắc kiểm riêng của người dùng ở `cua-toi/quy-tac-kiem-chung.md`); `AGENTS.md` yêu cầu chạy kiểm chứng cho file/báo cáo có số liệu; `thiet-lap` có nhóm câu tùy chọn về bối cảnh doanh nghiệp; `tao-ky-nang` có khuôn đầu ra cố định; thêm 3 mẫu trong `mau/cua-toi/`.
-- Agent phòng ban MOCHA: thêm **kiểm chứng độc lập** (`mocha/00_CHUNG/kiem-chung.md`): file/nghiên cứu phải qua AI thứ hai kiểm trước khi giao, kèm khối "Kết quả kiểm chứng"; vòng 6 trong `tu-hoc.md`.
-- Ngân hàng câu hỏi: thêm khối **M** (mô hình kinh doanh + phong cách thương hiệu, hỏi một lần cho cả công ty), **P** (vị trí phòng), **O1–O8** (phiếu đầu ra, thay D16–D17). Thứ tự hỏi: M → P → vai trò → đầu ra → còn lại.
-- Câu riêng phòng: đúng 12 câu theo khuôn H1.1–H4.3 (trước đây 12–20 câu tự do), trích số liệu từ mô hình kinh doanh; bộ câu được kiểm chéo trước khi dùng.
-- Nhận việc: thêm Bước 0 (đọc mô hình kinh doanh) và Bước 6 (chạy thử có kiểm chứng trước khi dùng thật).
-- Thêm 2 file mẫu: `mau-mo-hinh-kinh-doanh.md`, `mau-phong-cach-thuong-hieu.md` (bản thật nằm ở `cua-toi/MOCHA_AI/00_CHUNG/`, không lên repo).
+## 0.4.0 — 2026-10-12
+- **Trợ lý chung:** thêm kỹ năng `kiem-chung` (AI thứ hai kiểm chéo trước khi giao; quy tắc kiểm riêng ở `cua-toi/quy-tac-kiem-chung.md`, ghi qua `scripts/ghi-them.sh`). `AGENTS.md` yêu cầu chạy kiểm chứng cho file/báo cáo có số liệu và đọc bối cảnh công ty khi soạn nội dung ra ngoài. `thiet-lap` có nhóm câu tùy chọn về bối cảnh doanh nghiệp. `tao-ky-nang` hỏi thêm khuôn đầu ra và người duyệt. Thêm 3 mẫu trong `mau/cua-toi/`.
+- **Agent phòng ban MOCHA:** `mocha/00_CHUNG/kiem-chung.md` (cùng câu lệnh hệ thống) và vòng 6 trong `tu-hoc.md`. Ngân hàng câu hỏi thêm khối M (mô hình kinh doanh, M1–M10), P (vị trí phòng), O1–O8 (phiếu đầu ra, thay D16–D17). `setup-phong.md`: Bước 0 đọc mô hình kinh doanh, khuôn 12 câu riêng phòng, kiểm chéo bộ câu, Bước 6 chạy thử có kiểm chứng. 2 file mẫu hồ sơ công ty (bản thật ở `cua-toi`, không lên repo).
+- Chưa có: hook chặn gửi file chưa kiểm (cần xác nhận tên tool Telegram trên máy chạy).
+
+## 0.3.0 — 2026-10-09
+- **Dự án dạng thư mục** `cua-toi/du-an/<NN_ten>/`: `tong-quan`, `ban-giao` (mỗi phiên một khối, không đè khi mở 2–3 phiên song song), `tien-do`, `quyet-dinh`, `bai-hoc`, `kiem-tra`, `tai-lieu/`, `san-pham/`, `.tro-ly/` (trạng thái, lịch sử phiên, dấu vết khi nén). Tự chuyển dự án v0.1 (hỏi trước, giữ file cũ).
+- **Lưu phiên tự động** cho Claude Code và Codex: hook mở / trước nén / sau nén / đóng phiên. Quên "chốt" → lần sau trợ lý hỏi bù sổ. Nhật ký mỗi phiên một file. Giờ lấy từ máy, không đoán.
+- **Script ghi sổ an toàn** (`scripts/`): khóa chung cho nhiều phiên, chỉ-thêm, lưu lịch sử có thử lại, khôi phục không mất lịch sử. Kỹ năng mới `khoi-phuc`; chặn `git reset/checkout/clean/rebase` trong `cua-toi/`.
+- **Gói nghề → mẫu kỹ năng** (`mau/ky-nang/<loai>/SKILL.md`, 10 mẫu). Thiết lập bỏ câu chọn gói; từ "3 việc lặp lại" tạo luôn kỹ năng riêng. Checklist chung gom vào `AGENTS.md`.
+- **Kỹ năng riêng dạng thư mục** `cua-toi/ky-nang/<loai-viec>/`: `SKILL.md` (định dạng chuẩn Claude/Codex) + file đi kèm (mẫu, bảng giá, `vi-du/`). Kỹ năng kiểu cũ (1 file) tự chuyển khi cập nhật, giữ nội dung, sửa đường dẫn.
+- **Tự phát hiện việc lặp lại** (≥ 3 lần) → đề xuất đóng gói; kỹ năng mới luôn có mục "Cách dùng" + sổ tay `cua-toi/ky-nang/HUONG-DAN.md`; đầu phiên liệt kê kỹ năng riêng kèm câu gọi.
+- **Windows (thử nghiệm):** `CAI-DAT.bat`, `MO-TRO-LY.bat`, `CAP-NHAT.bat` + `scripts/windows.ps1` (tự cài Git for Windows + Claude Code, junction cho kỹ năng).
+- `.claude/skills` không còn nằm trong git (bộ cài tạo). `.gitattributes` giữ LF cho script bash. Cảnh báo khi cài vào thư mục iCloud/OneDrive/Dropbox. README: cài vào `~/tro-ly-ai`, hướng dẫn "Vẫn mở" của macOS mới, các màn hình đăng nhập lần đầu, duyệt hook Codex.
+- Test tự động `tests/test-v02.sh` (52 mục).
 
 ## 0.2.0 — 2026-10-07
 - Thêm `mocha/`: luật tự học cho agent phòng ban MOCHA (sổ việc tự ghi, học từ lần sửa, hỏi bù, đóng gói kỹ năng ở lần lặp thứ 3, rà tuần).

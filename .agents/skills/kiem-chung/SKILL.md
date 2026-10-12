@@ -128,7 +128,7 @@ Ví dụ: "thêm quy tắc kiểm chứng: mọi giá sản phẩm phải khớp
 Trợ lý làm:
 1. Viết lại thành **một dòng** theo cột của bảng trong file mẫu (Áp dụng cho · Kiểm gì · Đúng theo nguồn nào · Nếu sai ghi là). `Kiểm gì` phải kiểm được và có đúng/sai rõ; chưa rõ thì hỏi lại, không đoán.
 2. Hỏi 1 câu: "Em ghi quy tắc này vào sổ quy tắc kiểm chứng: '<dòng viết lại>'. Được không ạ?" Đồng ý mới ghi.
-3. **Chỉ thêm dòng mới**. Không xóa, không sửa dòng cũ: sửa = thêm dòng mới "thay cho quy tắc số N" và đánh dấu dòng N "Đã thay"; bỏ = đổi Trạng thái thành "Bỏ từ <ngày>".
+3. **Chỉ thêm dòng mới**, ghi bằng `bash scripts/ghi-them.sh cua-toi/quy-tac-kiem-chung.md` (có khóa khi nhiều phiên cùng ghi). Không xóa, không sửa dòng cũ: sửa = thêm dòng mới "thay cho quy tắc số N" và đánh dấu dòng N "Đã thay"; bỏ = đổi Trạng thái thành "Bỏ từ <ngày>".
 4. Từ lần kiểm sau: đưa các dòng "Đang dùng" vào thẻ `<quy_tac_rieng>`.
 
 Giới hạn: quy tắc riêng chỉ **thêm** việc kiểm, không nới lỏng 8 nguyên tắc trong câu lệnh hệ thống (ví dụ không cho phép "tin nguồn người viết"); quy tắc trái nguyên tắc thì từ chối và nêu lý do. Trợ lý **không tự thêm** quy tắc, chỉ đề xuất khi cùng một lỗi lặp lại và chờ người dùng đồng ý.
