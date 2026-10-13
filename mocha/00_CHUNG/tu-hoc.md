@@ -100,7 +100,7 @@ Khi người dùng nhắn "rà tuần" (hoặc "tổng kết tuần"): đọc `s
 ## Vòng 6 — Kiểm chứng độc lập trước khi giao
 
 Mọi file, báo cáo, nghiên cứu hoặc câu trả lời có số liệu / luật / giá / tin thị trường: **trước khi gửi người dùng**, đọc `.luat-chung/kiem-chung.md` và làm theo (gọi AI thứ hai kiểm, sửa, gắn khối "Kết quả kiểm chứng").
-- Hai lớp kiểm, cộng nhau, không thay nhau: (1) **tự kiểm chéo** theo mục A–E của prompt tổng v2.1 (bước 5 quy trình giao nhận), rồi (2) **AI thứ hai** kiểm độc lập. Gửi Sếp kèm kết quả cả hai (số phép kiểm, số lỗi, đối chiếu).
+- Hai lớp kiểm, cộng nhau, không thay nhau: (1) **tự kiểm chéo** theo mục "TRƯỚC KHI GIAO" của `du-lieu/huan-luyen/14b_PROMPT_RUT_GON.md` (và `08_TU_KIEM_CHEO.md` nếu gói phòng có), rồi (2) **AI thứ hai** kiểm độc lập. Gửi Sếp kèm kết quả cả hai (số phép kiểm, số lỗi, đối chiếu).
 - Không tự ghi "đã kiểm chứng" khi chưa chạy. Chưa kiểm được thì tiêu đề ghi `CHƯA KIỂM CHỨNG` kèm lý do.
 - Lỗi bị bắt: đề xuất dòng vào `bai-hoc.md` kèm mã (vd "sai ở O5") theo vòng 2.
 - Phiếu đầu ra (O1–O8): chưa có cho loại file đang làm → hỏi, hoặc gắn nhãn `[Tạm]`. Không tự đặt khuôn.
@@ -112,18 +112,18 @@ Bot chạy 24/24, lịch đặt ngay trong phiên bằng công cụ hẹn giờ 
 **Đặt lịch** — khi phiên mở với lời nhắn "Khởi động phiên: đặt lịch báo cáo…", và sau mỗi lần báo cáo chạy xong:
 1. `CronList`, xóa (`CronDelete`) mọi lịch báo cáo cũ của phiên.
 2. `CronCreate` (lặp lại) đúng 2 lịch, thay `<chat_id>` bằng mã nhóm trong lời nhắn khởi động (không có thì lấy khóa trong mục `groups` của `$TELEGRAM_STATE_DIR/access.json`):
-   - `47 17 * * *` → `LỊCH: báo cáo cuối ngày — làm theo .luat-chung/tu-hoc.md vòng 7, mục Báo cáo ngày. chat_id: <chat_id>`
+   - `47 17 * * 1-6` (thứ Hai → thứ Bảy, theo file 09 của bộ) → `LỊCH: báo cáo cuối ngày — làm theo .luat-chung/tu-hoc.md vòng 7, mục Báo cáo ngày. chat_id: <chat_id>`
    - `33 8 * * 1` → `LỊCH: rà tuần — làm theo .luat-chung/tu-hoc.md vòng 7, mục Rà tuần. chat_id: <chat_id>`
 3. Chỉ báo 1 dòng trong cửa sổ máy ("Đã đặt lịch 17:47 và thứ Hai 08:33"). Lúc khởi động **không gửi gì lên Telegram**.
 
 Lý do đặt lại sau mỗi lần chạy: Claude Code tự xóa lịch lặp lại sau 7 ngày; đặt lại mỗi ngày thì không bao giờ hết hạn.
 
-**Báo cáo ngày (17:47)** — theo prompt tổng v2.1, mục `ghi_nho_va_cai_tien`:
+**Báo cáo ngày (17:47, thứ Hai → thứ Bảy)** — theo `09_CAI_TIEN_HANG_NGAY.md` của bộ huấn luyện (gói phòng không có thì theo mục dưới):
 - Nguồn: cuộc trò chuyện trong phiên hôm nay + `so-viec.md` (dòng hôm nay) + `bao-cao/` hôm nay.
 - Nội dung, văn bản thường, dưới 3000 ký tự: dòng đầu `BÁO CÁO NGÀY <ngày/tháng> – Phòng <tên>` · Đã xong · Đang làm · Chờ Sếp chốt · tối đa 3 đề xuất cải tiến prompt, mỗi đề xuất kèm dẫn chứng tin nhắn trong ngày.
 - Không có việc nào hôm nay: chỉ 2 dòng — dòng đầu như trên, dòng 2 "Hôm nay phòng chưa có việc nào."
 - Lưu `bao-cao/<YYYY-MM-DD>_bao-cao-ngay.md`, rồi gửi bằng công cụ `reply` với `chat_id` trong lịch (không `reply_to`). Đây là báo cáo theo lịch Sếp đã chốt, không cần hỏi trước.
 
-**Rà tuần (thứ Hai 08:33)** — làm đúng vòng 5 (5 mục) cho 7 ngày gần nhất, thêm mục 6 "Chỉ số tự chấm" của prompt tổng: % chỗ hở em tự phát hiện · số lần Sếp nhắc lại cùng 1 điều · số lần "Alo / Đâu r" · số vòng sửa trước khi Sếp OK (không có dữ liệu thì ghi "chưa đo"). Lưu `bao-cao/<YYYY-MM-DD>_ra-tuan.md`, gửi như báo cáo ngày.
+**Rà tuần (thứ Hai 08:33)** — làm đúng vòng 5 (5 mục) cho 7 ngày gần nhất, thêm mục 6 "Chỉ số tự chấm" (mục "ĐO MỖI TUẦN" của 14b): % chỗ hở em tự phát hiện · số lần Sếp nhắc lại cùng 1 điều · số lần "Alo / Đâu r" · số vòng sửa trước khi Sếp OK (không có dữ liệu thì ghi "chưa đo"). Lưu `bao-cao/<YYYY-MM-DD>_ra-tuan.md`, gửi như báo cáo ngày.
 
 Chỉ dựa vào hội thoại và file, không bịa việc, số, tên. Lịch tới lúc đang làm việc khác: làm xong việc đang dở rồi báo cáo.

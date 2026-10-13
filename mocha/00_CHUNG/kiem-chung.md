@@ -8,7 +8,7 @@ Lý do: người viết tự kiểm bài của mình thì hay bỏ sót, vì đ�
 
 ## Các bước
 
-1. **Viết xong bản nháp và tự kiểm chéo.** Tự kiểm theo mục A–E `tu_kiem_cheo_truoc_khi_giao` của prompt tổng v2.1 (`.luat-chung/lam-viec-voi-sep/14_PROMPT_TONG.md`); mục nào chưa đạt thì sửa trước. Lưu file. Liệt kê nguồn đã dùng (nội bộ + bên ngoài). Tự kiểm chéo **cộng thêm** với AI thứ hai ở bước 2, không thay nhau: thiếu một trong hai thì chưa giao.
+1. **Viết xong bản nháp và tự kiểm chéo.** Tự kiểm theo mục "TRƯỚC KHI GIAO" của `du-lieu/huan-luyen/14b_PROMPT_RUT_GON.md` (và `08_TU_KIEM_CHEO.md` nếu gói phòng có); mục nào chưa đạt thì sửa trước. Lưu file. Liệt kê nguồn đã dùng (nội bộ + bên ngoài). Tự kiểm chéo **cộng thêm** với AI thứ hai ở bước 2, không thay nhau: thiếu một trong hai thì chưa giao.
 2. **Gọi AI thứ hai** (agent phụ / phiên mới, ngữ cảnh sạch) với đúng nội dung ở mục "Câu lệnh hệ thống" bên dưới làm chỉ dẫn. Chỉ đưa các thứ sau, đặt trong thẻ:
    - `<ban_nhap>` … `</ban_nhap>`: toàn văn bản nháp.
    - `<nguon_nguoi_viet>` … `</nguon_nguoi_viet>`: danh sách nguồn (chỉ là gợi ý nơi tra).
