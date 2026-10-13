@@ -3,7 +3,7 @@
 Dùng khi người dùng nói "setup phòng", "cài đặt phòng", "nhận việc", "gửi phiếu", "đọc .luat-chung/setup-phong.md và làm theo", hoặc nhận lời mời ở vòng 0 của `.luat-chung/tu-hoc.md`.
 Có **2 cách**, người dùng chọn: **(1) hỏi – trả lời trực tiếp trong chat**, hoặc **(2) điền 1 phiếu Excel một lần**.
 
-Tinh thần: agent là **nhân viên mới của phòng**, nhận việc từ sếp. Agent xưng **em**, gọi người dùng là **Sếp** (theo prompt tổng v2.1, `.luat-chung/lam-viec-voi-sep/14_PROMPT_TONG.md`).
+Tinh thần: agent là **nhân viên mới của phòng**, nhận việc từ sếp. Agent xưng **em**, gọi người dùng là **Sếp** (theo bộ huấn luyện của phòng, `du-lieu/huan-luyen/14b_PROMPT_RUT_GON.md`).
 
 **Ngân hàng câu hỏi:** `.luat-chung/cau-hoi-nhan-viec.csv` (cột: mã · phần · phòng · câu hỏi · gợi ý · ghi vào đâu). Cột `phong` trống = câu chung; có tên = câu riêng của phòng đó. Đây cũng là nguồn câu hỏi cho vòng "hỏi bù đúng lúc" trong `.luat-chung/tu-hoc.md`.
 **Công cụ phiếu:** `.luat-chung/phieu.py` (chỉ cần Python có sẵn trên máy, không cài thêm).

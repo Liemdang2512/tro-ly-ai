@@ -21,6 +21,11 @@ while IFS= read -r f; do
   fi
 done < <(find "$SRC" -type f ! -name .DS_Store)
 chmod +x "$DEST/cai-dat/them-tu-hoc.sh"
+# bộ "Làm việc với Sếp" v2.1 từng nằm trong repo; nay bộ chỉ ở du-lieu/huan-luyen/ của phòng → cất bản chép cũ
+if [ -d "$DEST/lam-viec-voi-sep" ] && [ ! -d "$SRC/lam-viec-voi-sep" ]; then
+  mkdir -p "$BK" && mv "$DEST/lam-viec-voi-sep" "$BK/lam-viec-voi-sep" && doi=$((doi + 1))
+  echo "MOCHA: đã cất bộ v2.1 cũ ở 00_CHUNG vào $BK"
+fi
 
 echo "MOCHA: cập nhật $doi file huấn luyện."
 [ -d "$BK" ] && echo "MOCHA: bản cũ đã sao lưu ở $BK"
