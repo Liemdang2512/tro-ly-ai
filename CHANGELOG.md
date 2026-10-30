@@ -1,5 +1,11 @@
 # Changelog
 
+## Chưa phát hành — 2026-10-30
+- Tìm kiếm mở rộng tùy chọn bằng Graphify cho sổ Markdown/text; hỏi rõ trước khi gửi tài liệu tới Claude.
+- Graph, cache và môi trường cài riêng nằm trong `cua-toi/.tro-ly/graphify/`, không vào lịch sử Git của sổ.
+- Kiểm tra graph cũ và trích xuất chưa đầy đủ; đọc lại nguồn khi trả lời; cập nhật sau chốt phiên.
+- Kiểm thử thật trên macOS: tạo graph, truy vấn và cập nhật tăng dần. Chưa cho phép bật tính năng này trên Windows đến khi kiểm thử trên máy thật.
+
 ## 0.6.0 — 2026-10-13
 - **Đồng bộ theo bộ "Làm việc với Sếp" v2.2 (file 23):** bộ không còn nằm trong repo (Sếp chốt: không lên mạng). Mỗi phòng tự nạp `du-lieu/huan-luyen/14b_PROMPT_RUT_GON.md` của chính phòng (gói do trợ lý chính của Sếp chép); thứ tự ưu tiên theo file 23. Phòng chưa có gói → bot báo Sếp. Khối `<!-- prompt-tong -->` v2.1 cũ tự đổi sang `<!-- huan-luyen -->`; bản chép v2.1 trong `.luat-chung/` và `00_CHUNG/` được cất vào `sao-luu/`.
 - Lịch báo cáo phòng đổi sang thứ Hai → thứ Bảy 17:47 (theo file 09). Tự kiểm chéo trỏ tới "TRƯỚC KHI GIAO" của 14b / file 08, vẫn cộng thêm AI thứ hai.

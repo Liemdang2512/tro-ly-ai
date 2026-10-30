@@ -121,6 +121,12 @@ Tất cả trong thư mục **`cua-toi`**. Đều là file chữ, mở bằng b�
 - Mọi thứ gửi ra ngoài (email, tin nhắn), trợ lý **chỉ soạn sẵn**, anh/chị tự gửi.
 - **Sao lưu:** bật Time Machine (Mac) / File History (Windows), hoặc định kỳ chép thư mục `cua-toi` sang ổ khác.
 
+## Tìm thông tin trong nhiều dự án (tùy chọn)
+
+**Hiện hỗ trợ macOS; Windows vẫn dùng cách tìm trong sổ hiện có.** Khi sổ đã có nhiều tài liệu, anh/chị có thể nói **“bật tìm kiếm mở rộng”**. Trợ lý sẽ giải thích và chỉ bật khi anh/chị đồng ý: nội dung file Markdown và văn bản `.txt` trong sổ được gửi tới Claude (Anthropic) để tạo bản đồ tìm kiếm. Các định dạng khác như PDF chưa được đưa vào bản đồ này. Lần đầu có thể mất thời gian và dùng hạn mức Claude; tính năng cần Graphify, Python 3.10+ và Claude Code đã đăng nhập. Nếu máy chưa có, nhờ người quản trị xem [QUAN-TRI.md](QUAN-TRI.md).
+
+Bản đồ và bản sao để lập bản đồ nằm trong `cua-toi/.tro-ly/graphify/`, không đưa vào repo chung hoặc lịch sử Git của sổ. Khi cần tra cứu, trợ lý vẫn kiểm tra lại file gốc. Muốn ngừng thì nói **“tắt tìm kiếm mở rộng”**; dữ liệu graph đã tạo vẫn được giữ lại. Khi graph chưa sẵn sàng, trợ lý tiếp tục tìm trong sổ bình thường.
+
 ## Cập nhật bản mới
 
 Bấm đúp **`CAP-NHAT.command`** (Mac) hoặc **`CAP-NHAT.bat`** (Windows). Dữ liệu trong `cua-toi` giữ nguyên. Sổ dự án kiểu cũ sẽ được trợ lý **hỏi trước** rồi mới chuyển sang dạng thư mục.

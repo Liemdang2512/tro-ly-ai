@@ -99,3 +99,11 @@ Mỗi tuần (hoặc khi người dùng nói "dọn dẹp"): bài học lặp l�
 ## Agent phòng ban MOCHA (`mocha/`)
 
 Phần huấn luyện agent phòng ban nằm ở `mocha/` — xem `mocha/README.md`. Sửa ở `mocha/`, không sửa bản chép trong `cua-toi/MOCHA_AI/00_CHUNG/`. Máy dùng bấm `CAP-NHAT.command` là tự nhận bản mới. Lần đầu sau khi có tính năng này: bấm `CAP-NHAT.command` **2 lần** (lần 1 kéo bản mới của chính file cập nhật, lần 2 mới chạy phần MOCHA).
+
+## Tìm kiếm mở rộng bằng Graphify
+
+Trên từng máy, cài Python 3.10+, rồi chạy `bash scripts/graphify.sh cai` để cài Graphify 0.9.41 vào môi trường riêng trong sổ (cần Internet, không gửi tài liệu trong bước cài), đảm bảo `graphify` và Claude Code đã đăng nhập có trên PATH. Đây là tính năng tùy chọn: thông báo rõ cho người dùng trước khi bật vì nội dung `.md` và `.txt` trong `cua-toi/` sẽ được gửi tới Anthropic để trích xuất. Không dùng backend tự phát hiện. Sau khi người dùng đồng ý: `bash scripts/graphify.sh bat`, rồi `bash scripts/graphify.sh cap-nhat`. Tra cứu: `bash scripts/graphify.sh tim "từ khóa"`. Tắt: `bash scripts/graphify.sh tat`.
+
+Graph, cache và bản sao nguồn nằm dưới `cua-toi/.tro-ly/graphify/`. Script nâng cấp thêm đường dẫn này vào `.gitignore` của sổ. Graph có thể chứa nội dung nhạy cảm; bảo vệ và sao lưu như dữ liệu người dùng. Nếu thiếu công cụ, lỗi đăng nhập, graph cũ, hoặc không có kết quả, trợ lý tra trực tiếp sổ. Không dùng `graphify update` thay cho `cap-nhat` vì nó không cập nhật ngữ nghĩa tài liệu.
+
+Đã kiểm thử tạo graph, truy vấn và cập nhật tăng dần trên macOS với Claude Code đã đăng nhập. Graphify 0.9.41 là phiên bản được ghim trong bộ cài riêng. Đã chặn bật Graphify trên Windows cho đến khi kiểm thử trên máy thật; trợ lý Windows vẫn tìm trực tiếp trong sổ.

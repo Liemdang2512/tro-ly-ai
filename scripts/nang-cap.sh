@@ -29,7 +29,7 @@ fi
 
 # 3. Những thứ không đưa vào lịch sử: khóa tạm, tài liệu gốc người dùng đưa (thường nặng).
 gi="$CUA_TOI/.gitignore"
-for dong in '.tro-ly/khoa/' '*.tmp.*' '*.moi.*' 'tai-lieu/' 'du-an/*/tai-lieu/' '.DS_Store'; do
+for dong in '.tro-ly/khoa/' '.tro-ly/graphify/' '*.tmp.*' '*.moi.*' 'tai-lieu/' 'du-an/*/tai-lieu/' '.DS_Store'; do
   grep -qxF "$dong" "$gi" 2>/dev/null || echo "$dong" >> "$gi"
 done
 

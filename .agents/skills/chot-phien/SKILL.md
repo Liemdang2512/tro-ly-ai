@@ -67,6 +67,7 @@ Người dùng đồng ý đóng gói việc lặp lại → chạy kỹ năng `
    ```
 2. `bash scripts/phien.sh chot <mã phiên>`
 3. `bash scripts/luu-so.sh "chot-phien: <chủ đề>"`
+4. Nếu `cua-toi/.tro-ly/graphify/da-dong-y` tồn tại, chạy `bash scripts/graphify.sh cap-nhat`. Nếu lỗi, báo ngắn gọn graph chưa cập nhật và tiếp tục dùng sổ gốc; không cản việc chốt sổ.
 
 ## 6. Kết thúc
 Một dòng: *"Đã lưu. Lần sau anh/chị chỉ cần nói 'tiếp tục <tên dự án>'."*
